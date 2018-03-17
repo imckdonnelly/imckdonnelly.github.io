@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerrymander Visualization Project</title>
+  <script src="d3.min.js"></script>
+  <script src="topojson.js"></script>
+  <script src="jquery-3.2.1.js"></script>
+  <style>
+    .district {
+      fill: cadetBlue;
+      stroke: #fff;
+      stroke-width: 1.5px;
+    }
+  </style>
+</head>
+<body>
+<script>
+  var width = 1300;
+  var height = 800;
+    
+  var svg = d3.select("body")
+    .append("svg")
+    .attr("height", height)
+    .attr("width", width);
+
+  var g = d3.select("svg")
+      .append("g");
+  
+  var projection = d3.geoMercator()
+    .translate([width/2, height/2])
+    .center([-89.9941, 44.8243])
+    .scale(4500 * 1.5);
+
+  var path = d3.geoPath()
+    .projection(projection);
+    
+  d3.json("Wisconsin_89_to_92.json", function(error, state) {
+    g.selectAll("path")
+      .data(topojson.feature(state, state.objects.details).features)
+    .enter().append("path")
+      .attr("d", path)
+      .attr("class", "district");
+  });
+</script>
+
+</body>
+</html>

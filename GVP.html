@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerrymander Visualization Project</title>
+  <link rel="stylesheet" href="GVP.css" type="text/css">
+  <script src="d3.min.js"></script>
+  <script src="topojson.js"></script>
+  <script src="jquery-3.2.1.js"></script>
+  <script src="GVP.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="title">
+      <p class="top-fill" id="state-name"></p>
+      <p class="top-fill">|</p>
+      <p class="top-fill" id="year-start"></p>
+      <p class="top-fill" id="hyphen">-</p>
+      <p class="top-fill" id="year-end"></p>
+    <div class="state-select">
+      <select id="state-chooser">
+        <option value="" selected="selected">Choose a State</option>
+        <option value="0">Arizona</option>
+        <option value="1">Wisconsin</option>
+        <option value="2">Massachusetts</option>
+        <option value="3">North Carolina</option>
+      </select>
+    </div>
+    </div>
+    <div class="map-container">
+      <div class="map-center">
+        <div id=map></div>
+      </div>
+      <div class="scroll-bar">
+        <div class="scroll" id="time-start"></div>
+        <div class="scroll" id="scroller">
+          <input type="range" class="bar" step="2" list="date-list" id="state-dates">
+          <datalist id="date-list">
+            <option id="firstMap"></option>
+            <option id="secondMap"></option>
+            <option id="thirdMap"></option>
+            <option id="fourthMap"></option>
+            <option id="fifthMap"></option>
+            <option id="sixthMap"></option>
+            <option id="seventhMap"></option>
+            <option id="eighthMap"></option>
+            <option id="ninthMap"></option>
+            <option id="tenthMap"></option>
+            <option id="eleventhMap"></option>
+            <option id="map-12"></option>
+            <option id="map-13"></option>
+            <option id="map-14"></option>
+            <option id="map-15"></option>
+            <option id="map-16"></option>
+            <option id="map-17"></option>
+          </datalist>
+        </div>
+        <div class="scroll" id="time-end"></div>
+      </div>
+    </div>
+  </div>
+  <div class="context-container">
+    <div class="text-card" id="context">
+      <h3>Contexual Information</h3>
+      <div class="static-text">
+        <p>Party Control of State Legislature:</p>
+        <p>Party Control of Governorship:</p>
+        <p>Number of Representatives:</p>
+        <p>Population (at last apportionment):</p>
+        <p>Method of Redistricting:</p>
+      </div>
+      <div class="json-text">
+        <p class="fill-in" id="leg-control"></p>
+        <p class="fill-in" id="gov-control"></p>
+        <p class="fill-in" id="rep-num"></p>
+        <p class="fill-in" id="pop"></p>
+        <p class="fill-in" id="redist-type"></p>
+      </div>
+    </div>
+    <div class="text-card" id="paragraph">
+      <h3>Why did it change?</h3>
+      <div class="box-text" id="context-paragraph">
+        <p id="context-one"></p>
+        <p id="context-two"></p>
+        <p id="context-three"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
