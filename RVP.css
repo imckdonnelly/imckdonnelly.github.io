@@ -1,0 +1,215 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 90%;
+  margin: 0;
+  padding: 0;
+  background-color: #7187f3;
+  font-family: "Helvatica", Arial, sans;
+}
+
+
+/* Top of page */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.top-fill {
+  display: inline-block;
+  padding: .4em;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.title p {
+  color: #ffffff;
+}
+
+#hyphen {
+  padding: .4em 0;
+}
+
+#year-start {
+  padding: .4em 0 .4em .4em;
+}
+
+#year-end {
+  padding: .4em .4em .4em 0;
+}
+
+.state-chooser {
+  /*padding: 1em 2em 0 0;*/
+  padding: 1.2% 6% 0 0;
+  float: right;
+}
+
+/* scroll bar */
+.scroll-bar {
+  height: 25px;
+}
+
+.scroll {
+  display: inline-block;
+}
+
+#time-start {
+  float: left;
+  padding-left: 3%;
+}
+
+#time-end {
+  float: right;
+  padding-right: 3%;
+}
+
+#scroller {
+  width: 85%;
+}
+
+.bar {
+  width: 100%;
+  //-webkit-appearance: none;//
+  height: 8px;
+  background: #7187f3;
+}
+
+.bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 25px;
+  cursor: pointer;
+  background: #d21212;
+}
+
+/* Map */
+.map-container {
+  background-color: #ffffff;
+}
+
+.map-center {
+  text-align: center;
+}
+
+.map-center img {
+  height: 500px;
+  width: 495px;
+}
+
+.map {
+  height: 560px;
+  width: 500px;
+}
+
+#district-1 {
+  fill: black;
+}
+
+#district-2 {
+  fill: darkgrey;
+}
+
+#district-3 {
+  fill: Bisque;
+}
+
+#district-4 {
+  fill: DarkGreen;
+}
+
+#district-5 {
+  fill: cadetBlue;
+}
+
+#district-6 {
+  fill: maroon;
+}
+
+#district-7 {
+  fill: mediumOrchid;
+}
+
+#district-8 {
+  fill: MediumPurple;
+}
+
+#district-9 {
+  fill: red;
+}
+
+#district-10 {
+  fill: SlateBlue;
+}
+
+#district-11 {
+  fill: Coral;
+}
+
+.district {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.district:hover {
+  stroke: #000000;
+}
+
+
+/*Bottom of page*/
+.context-container {
+  width: 100%;
+  height: 35%;
+}
+
+.text-card {
+  min-width: 36%;
+  max-width: 60%;
+  display: inline-block;
+  margin: 1% 0;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  text-align: left;
+  line-height: 1.7em;
+  overflow: scroll;
+  height: 90%;
+}
+
+#context {
+  float: left;
+  margin-left: 1%;
+}
+
+#paragraph {
+  float: right;
+  margin-right: 1%;
+}
+
+.text-card h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.static-text {
+  float: left;
+  padding: 0 1.5em;
+}
+
+.json-text {
+  float: left;
+  padding: 0 1.5em;
+}
+
+.box-text {
+  margin: 0;
+  padding: 0 1.5em;
+  line-height: 1.7em;
+}
