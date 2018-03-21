@@ -108,47 +108,79 @@ body {
 }
 
 #district-1 {
-  fill: black;
+  fill: Black;
 }
 
 #district-2 {
-  fill: darkgrey;
+  fill: #a6cee3;
 }
 
 #district-3 {
-  fill: Bisque;
+  fill: #1f78b4;
 }
 
 #district-4 {
-  fill: DarkGreen;
+  fill: #b2df8a;
 }
 
 #district-5 {
-  fill: cadetBlue;
+  fill: #33a02c;
 }
 
 #district-6 {
-  fill: maroon;
+  fill: #fb9a99;
 }
 
 #district-7 {
-  fill: mediumOrchid;
+  fill: #e31a1c;
 }
 
 #district-8 {
-  fill: MediumPurple;
+  fill: #fdbf6f;
 }
 
 #district-9 {
-  fill: red;
+  fill: #ff7f00;
 }
 
 #district-10 {
-  fill: SlateBlue;
+  fill: #cab2d6;
 }
 
 #district-11 {
-  fill: Coral;
+  fill: #6a3d9a;
+}
+
+#district-12 {
+  fill: #ffff99;
+}
+
+#district-13 {
+  fill: #b15928;
+}
+
+#district-14 {
+  fill: #6554BF;
+}
+
+#district-15 {
+  fill: #BA8D60;
+}
+
+#district-16 {
+  fill: #E5E567;
+}
+
+#district-17{
+  fill: #CE8393;
+}
+
+#district-18 {
+  fill: #BEB0AF;
+}
+
+#district-19 {
+  fill: #EFA564;
 }
 
 .district {
