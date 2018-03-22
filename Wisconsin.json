@@ -9,7 +9,7 @@
    "pop": "30,945",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_30_to_30.json",
-   "context": "q",
+   "context": "When Wisconsin first entered the Union as a state, it was originally <a href=\"http://legisworks.org/sal/9/stats/STATUTE-9-Pg56.pdf#page=3\">voted in</a> by the 29th Congress in 1845 with two representatives. However, Wisconsin voters rejected the proposed constitution, so it fell to the 30th Congress in 1848 to <a href=\"https://www.loc.gov/law/help/statutes-at-large/30th-congress/session-1/c30s1ch50.pdf\">again vote</a> Wisconsin into the Union, this time with three representatives. Because of the confusion surrounding the incorporation, Wisconsin only elected one at-large representative for the 30th Congress in 1848. This lasted until the 31st Congress in 1849.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -23,7 +23,7 @@
    "pop": "305,391",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_31_to_37.json",
-   "context": "w",
+   "context": "Beginning with the 31st Congress in 1849, Wisconsin was <a href=\"https://docs.legis.wisconsin.gov/1848/related/acts/48act_p15_16.pdf\">districted into</a> three districts based on the congressional apportionment of three representatives. Because the census and apportionment of 1850 did not indicate that Wisconsin should gain or lose any representatives, this map would last until the 38th Congress in 1863.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -37,7 +37,7 @@
    "pop": "775,881",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_38_to_42.json",
-   "context": "e",
+   "context": "After the census of 1960, Wisconsin was reapportioned 3 more representatives, bringing its total to 6. Consequently, the state legislature redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/1861/related/acts/238.pdf\">Chapter 238</a> of the Laws of 1861. This map would last until the 43rd Congress in 1973.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -51,7 +51,7 @@
    "pop": "1,054,670",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_43_to_44.json",
-   "context": "r",
+   "context": "After the census of 1970, Wisconsin was reapportioned 2 more representatives, bringing its total to 8. Consequently, the state legislature redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/1872/related/acts/48.pdf\">Chapter 48</a> of the Laws of 1972. This map would last until the 45th Congress in 1877.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -65,7 +65,7 @@
    "pop": "1,054,670",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_45_to_47.json",
-   "context": "t",
+   "context": "Although the state was not required to redistrict itself because of any federal laws, it nevertheless conducted its own internal census in 1875. After the completion of the state census, the state legislature created another county, Taylor, in the middle of the state, and <a href=\"https://docs.legis.wisconsin.gov/1875/related/acts/178.pdf\">adjusted it</a> from the 7th Congressional District into the 8th Congressional District. This map would last until the 48th Congress in 1883.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -93,7 +93,7 @@
    "pop": "1,693,330",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_53_to_57.json",
-   "context": "u",
+   "context": "After the census of 1890, Wisconsin was reapportioned 1 more representative, bringing its total to 11. Consequently, the state legislature redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/1891/related/acts/483.pdf\">Chapter 483</a> of the Acts of 1891. This map would last until the 58th Congress in 1903.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -107,7 +107,7 @@
    "pop": "2,069,042",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_58_to_62.json",
-   "context": "i",
+   "context": "After the census of 1900, Wisconsin was reapportioned 1 more representative, bringing its total to 11. Consequently, the state legislature redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/1901/related/acts/398.pdf\">Chapter 398</a> of the Acts of 1901. This map would last until the 63rd Congress in 1913.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -121,7 +121,7 @@
    "pop": "2,333,860",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_63_to_72.json",
-   "context": "o",
+   "context": "After the census and reapportionment of 1910, Wisconsin did not gain or lose any representatives, maintaining its number at 11. However, the state legislature did redistricted the state in <a href=\"http://docs.legis.wisconsin.gov/1911/related/acts/661.pdf\">Chaper 661, Section 5</a> of the Wisconsin Session Laws of 1911. Because Congress did not pass a reapportionment act after the census of 1920, this map would last until the 73rd Congress in 1933.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -135,7 +135,7 @@
    "pop": "2,939,006",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_73_to_88.json",
-   "context": "p",
+   "context": "After the census of 1930, Wisconsin was reapportioned 1 less representatives for the first time in its history, reducing its total to 10. Consequently, the state legislature redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/1931/related/acts/31ssact028.pdf\">Chapter 28</a> of the Special Session of the Acts of 1931. Because Wisconsin was reapportioned 10 representatives in 1940 and 1950, and there was no requirement that the state redistrict itself to account for population shifts, this map would last until the 89nd Congress in 1965.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -149,9 +149,9 @@
    "pop": "3,951,777",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_89_to_92.json",
-   "context": "a",
-   "contextTwo": "",
-   "contextThree": ""
+   "context": "In 1962, the Supreme Court of the United States handed down its opinion in <a href=\"https://supreme.justia.com/cases/federal/us/369/186/\"><em>Baker v. Carr</em></a>. This landmark decision provided to the Courts the ability to hear cases about redistricting, although it did not itself provide any guidance for which districts, and how to best interfere. Nevertheless, after the decision was handed down, the Attorney General of Wisconsin sued the Secretary of State of Wisconsin in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/205/673/2181311/\"><em>State of Wisconsin v. Zimmerman</em></a> (1962). Because the population of Wisconsin had shifted significantly, but the state’s congressional districts had not been redrawn since 1931, the Attorney General argued that the unequal populations of the districts violated the Wisconsin population’s equal protection rights.",
+   "contextTwo": "The Court, uneager to intervene in the election process, deferred the case on the standing question, claiming that the Attorney General lacked the standing to bring the case, and ordering that for the case to continue, citizens of Wisconsin would need to join the lawsuit. Following this ruling, the Attorney General recruited five citizens to join as plaintiffs in the lawsuit, alleging a 14th Amendment violation. Simultaneously, the Governor of Wisconsin convened a special session of the legislature to try and resolve the redistricting issue legislatively, rather than in the courts. Unfortunately, the Governor and Legislature could not agree on a new map, with the Governor vetoing each new plan sent to him.",
+   "contextThree": "In August of 1962, the District Court handed down its decision in the new <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/209/183/1411910/\"><em>State of Wisconsin v. Zimmerman</em></a>. Ruling that they did not have enough clarity by the Supreme Court for what would constitute fair districts, and so declining to redraw the districts, they ended the opinion saying that they expected to receive such clarification within the next two terms. With no new districts in place from either the state legislature or the court, the election of 1962 took place with the lines drawn in 1931. When the legislature convened in 1963, they and the new governor were <a href=\"http://images.library.wisc.edu/WI/EFacs/WIBlueBks/BlueBks/WIBlueBk1970/reference/wi.wibluebk1970.i0007.pdf\">committed</a> (pg 120) to redistricting the state, and successfully did so with <a href=\"https://docs.legis.wisconsin.gov/1963/related/acts/63.pdf \">Chapter 63</a> of the Laws of 1963. This map would last until the 93rd Congress in 1973."
  },
  {
    "sYear": 1973,
@@ -163,7 +163,7 @@
    "pop": "4,417,821",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_93_to_97.json",
-   "context": "s",
+   "context": "After the census of 1970, Wisconsin was reapportioned 1 less representatives, reducing its total to 9. Consequently, the state legislature redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/1971/related/acts/133.pdf\">Chapter 133</a> of the Acts of 1971. This map would last until the 98th Congress in 1983.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -177,7 +177,7 @@
    "pop": "4,705,642",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_98_to_102.json",
-   "context": "d",
+   "context": "After the census and reapportionment of 1980, the number of representatives from Wisconsin did not change, maintaining its number at 9. However, the state legislature did redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/1981/related/acts/154.pdf\">Chapter 154</a> of the Acts of 1981 to comply with the equal population standard. This map would last until the 103rd Congress in 1993.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -191,7 +191,7 @@
    "pop": "4,891,769",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_103_to_107.json",
-   "context": "f",
+   "context": "After the census and reapportionment of 1990, the number of representatives from Wisconsin did not change, maintaining its number at 9. However, the state legislature did redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/1991/related/acts/256.pdf\">Chapter 256</a> of the Laws of 1991. This map would last until the 108th Congress in 2003.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -205,7 +205,7 @@
    "pop": "5,363,675",
    "redistType": "State Legislature",
    "fileName": "wi_topojson/Wisconsin_108_to_112.json",
-   "context": "g",
+   "context": "After the census of 2000, Wisconsin was reapportioned 1 less representative, reducing its total to 8. Consequently, the state legislature redistricted the state in <a href=\"https://docs.legis.wisconsin.gov/2001/related/acts/46\">Act 46</a> of the Laws of 2001. This map would last until the 113th Congress in 2013.",
    "contextTwo": "",
    "contextThree": ""
  }
