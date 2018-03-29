@@ -12,10 +12,16 @@ $(document).ready(function () {
     "filePath": "Wisconsin.json",
     "center": [-89.9941, 44.8243],
     "scale": "4800"
-    }
+    },
+    {
+    "stateName": "Massachusetts",
+    "filePath": "Massachusetts.json",
+    "center": [-71.8083, 42.1596],
+    "scale": "11300"
+    },
   ];
     
-  var width = 550;
+  var width = 750;
   var height = 570;
     
   var svg = d3.select("#map")
@@ -94,17 +100,18 @@ $(document).ready(function () {
         $("#context-three").html(jrows[0].contextThree);
     }
     
-    //Arizona path creation
+    //Map path creation
+    
     var projection = d3.geoMercator()
-      .translate([width/2, height/2])
-      .center(statePaths[index].center)
-      .scale(statePaths[index].scale);
+        .translate([width/2, height/2])
+        .center(statePaths[index].center)
+        .scale(statePaths[index].scale); 
       
+
     var path = d3.geoPath()
       .projection(projection);
     
-    
-    //load Arizona maps
+    //load map
     function renderMap(error, state) {
       g.selectAll("path")
         .data(topojson.feature(state, state.objects.details).features)
@@ -145,13 +152,13 @@ $(document).ready(function () {
       }
       else {
         clearPath();
-        changeMap();
         changeText();
+        changeMap();
       }
     };
   }
   
-
+  
       // if(g.selectAll("path").nodes().length > 0) {
       //   g.selectAll("path")
       //     .transition()
