@@ -19,6 +19,12 @@ $(document).ready(function () {
     "center": [-71.8083, 42.1596],
     "scale": "11300"
     },
+    {
+    "stateName": "North Carolina",
+    "filePath": "North_Carolina.json",
+    "center": [-79.3877, 35.5557],
+    "scale": "4500"
+    }
   ];
     
   var width = 750;
