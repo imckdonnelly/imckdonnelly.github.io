@@ -1,0 +1,125 @@
+body {
+  font-family: "Helvatica", Arial, sans;
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 150px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "content";
+}
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-rows: 85px 1fr;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-areas:
+      "header header header"
+      "content content content";
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    grid-template-rows: 85px 1fr;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas: 
+      "header  header  header"
+      "left-side content right-side";
+  }
+}
+
+.title {
+  grid-area: header;
+  background-color: #7187f3;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.top-fill {
+  font-size: 2em;
+  margin: 0;
+  padding: .4em;
+  color: #ffffff;
+}
+
+.left-sidebar {
+  grid-area: left-side;
+  background-color: #7187f3;
+}
+
+.right-sidebar {
+  grid-area: right-side;
+  background-color: #7187f3;
+}
+
+
+.tile-directory {
+  background-color: white;
+  display: grid;
+  grid-area: content;
+  grid-template-columns: 75%;
+  grid-template-rows: repeat(4, 18%);
+  grid-row-gap: 5%;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
+@media only screen and (min-width: 992px) {
+  .tile-directory {
+    grid-area: content;
+    grid-template-columns: repeat(2, 30%);
+    grid-template-rows: repeat(2, 30%);
+    align-content: space-evenly;
+    justify-content: space-evenly;
+  }
+}
+
+.tile {
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 3vw;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+@media only screen and (min-width: 992px) {
+  .tile {
+    
+  }
+}
+
+
+#Visualizer {
+  background: linear-gradient(0deg, #a6cee3, #1f78b4);
+}
+#Visualizer:hover {
+  background: linear-gradient(0deg, #ebf8ff, #a6cee3);
+}
+
+#blog-1 {
+  background: linear-gradient(0deg, #b2df8a, #33a02c);
+}
+#blog-1:hover {
+  background: linear-gradient(0deg, #f1fde6, #b2df8a);
+}
+
+#blog-2 {
+  background: linear-gradient(0deg, #ffff99, #E5E567); 
+}
+#blog-2:hover {
+  background: linear-gradient(0deg, #f7f7ee, #ffff99); 
+}
+
+#blog-3 {
+  background: linear-gradient(0deg, #fb9a99, #e31a1c);
+}
+#blog-3:hover {
+  background: linear-gradient(0deg, #ffebeb, #fb9a99);
+}
+
+
+

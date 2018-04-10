@@ -1,0 +1,129 @@
+body {
+  font-family: "Helvatica", Arial, sans;
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 150px 1fr;
+  grid-template-columns: 75px 1fr 75px;
+  grid-template-areas:
+    "header header header"
+    "content content content";
+}
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-rows: 85px 1fr;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-areas:
+      "header header header"
+      "content content content";
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    grid-template-rows: 85px 1fr;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas: 
+      "header  header  header"
+      "left-side content right-side";
+  }
+}
+
+.title {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  background-color: #7187f3;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .title {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    justify-items: center;
+  }
+}
+
+.top-fill {
+  font-size: 1.5em;
+  margin: 0;
+  padding: .4em;
+  color: #ffffff;
+  text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  .top-fill {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+.right-block {
+  background-color: #7187f3;
+}
+
+.back-button {
+  background-color: #ff9e21;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  text-decoration: none;
+  opacity: .99;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.back-button div {
+    color: #ff9e21;
+    opacity: 0.0;
+  }
+.back-button:hover {
+  background-color: #c16030;
+}
+@media only screen and (min-width: 992px) {
+  .back-button div {
+    color: black;
+    opacity: 1.0;
+  }
+}
+
+
+.left-sidebar {
+  grid-area: left-side;
+  background-color: #7187f3;
+}
+
+.right-sidebar {
+  grid-area: right-side;
+  background-color: #7187f3;
+}
+
+.main-content {
+  grid-area: content;
+  display: grid;
+  grid-template-rows: 77px 1fr 77px;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-areas:
+      "top-border  top-border  top-border"
+      "left-border  text  right-border";
+}  
+
+.text-area {
+  grid-area: text;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  box-shadow: 0 0 2px 0 #000000;
+  padding: 1.2em 4%;
+  background-color: white;
+
+}
+
+.text-area h1 {
+    text-align: center;
+}
+
+.text-area p {
+}
