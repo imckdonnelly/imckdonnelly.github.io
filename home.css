@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Helvatica", Arial, sans;
   margin: 0;
@@ -22,7 +29,7 @@ body {
   body {
     grid-template-rows: 85px 1fr;
     grid-template-columns: 100px 1fr 100px;
-    grid-template-areas: 
+    grid-template-areas:
       "header  header  header"
       "left-side content right-side";
   }
@@ -53,24 +60,25 @@ body {
   background-color: #7187f3;
 }
 
-
 .tile-directory {
   background-color: white;
-  display: grid;
   grid-area: content;
-  grid-template-columns: 75%;
-  grid-template-rows: repeat(4, 18%);
-  grid-row-gap: 5%;
-  align-content: space-evenly;
-  justify-content: space-evenly;
+  display: grid;
+
 }
 @media only screen and (min-width: 992px) {
   .tile-directory {
-    grid-area: content;
-    grid-template-columns: repeat(2, 30%);
-    grid-template-rows: repeat(2, 30%);
-    align-content: space-evenly;
-    justify-content: space-evenly;
+  grid-template-columns: 3% 1fr 3%;
+  grid-template-rows: 3% max-content 1fr max-content .6fr  1%;
+  grid-row-gap: 4%;
+  grid-column-gap: 3%;
+  grid-template-areas:
+    ". . ."
+    ". text-one ."
+    ". state-links ."
+    ". text-two ."
+    ". blog-links ."
+    ". . .";
   }
 }
 
@@ -80,46 +88,107 @@ body {
   border-width: 5px;
   border-radius: 50px;
   text-decoration: none;
-  font-size: 3vw;
-  text-align: center;
+  font-size: 1.6em;
   display: grid;
+  align-items: center;
+  text-align: center;
+  background-color: #e8d2cd;
+  color: black;
+}
+
+.text-block {
+  border-color: black;
+  border-style: solid;
+  padding: 0.2em .6em;
+}
+
+.pic-link {
+  border: solid;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "tile";
   justify-items: center;
   align-items: center;
 }
+.picture {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  grid-area: tile;
+}
+.state-name {
+  text-decoration: none;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8em;
+  color: black;
+  grid-area: tile;
+}
+.pic-link:hover .state-name {
+  visibility: visible;
+  opacity: 1;
+}
+.pic-link:hover .picture{
+  opacity: .15;
+}
+
+
+
 @media only screen and (min-width: 992px) {
-  .tile {
-    
+  #first-text {
+    grid-area: text-one;
+  }
+  .state-links {
+    grid-area: state-links;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3%;
+  }
+ 
+  #arizona {
+    grid-column-start: 1;
+  }
+  #massachusetts {
+    grid-column-start: 2;
+  }
+  #north-carolina {
+    grid-column-start: 3;
+  }
+  #wisconsin {
+    grid-column-start: 4;
+    padding-bottom: 1%;
+  }
+  
+  #second-text {
+    grid-area: text-two;
+  }
+  
+  .tile:hover {
+    opacity: .7;
+  }
+  .tile:hover div {
+    color: #7187f3;
+    opacity: 1;
+  }
+  .blog-links {
+    grid-area: blog-links;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5%;
+  }
+  #blog-1 {
+    grid-column-start: 1;
+  }
+  #blog-2 {
+    grid-column-start: 2;
+  }
+  #blog-3 {
+    grid-column-start: 3;
+  }
+  #blog-4 {
+    grid-column-start: 4;
   }
 }
-
-
-#Visualizer {
-  background: linear-gradient(0deg, #a6cee3, #1f78b4);
-}
-#Visualizer:hover {
-  background: linear-gradient(0deg, #ebf8ff, #a6cee3);
-}
-
-#blog-1 {
-  background: linear-gradient(0deg, #b2df8a, #33a02c);
-}
-#blog-1:hover {
-  background: linear-gradient(0deg, #f1fde6, #b2df8a);
-}
-
-#blog-2 {
-  background: linear-gradient(0deg, #ffff99, #E5E567); 
-}
-#blog-2:hover {
-  background: linear-gradient(0deg, #f7f7ee, #ffff99); 
-}
-
-#blog-3 {
-  background: linear-gradient(0deg, #fb9a99, #e31a1c);
-}
-#blog-3:hover {
-  background: linear-gradient(0deg, #ffebeb, #fb9a99);
-}
-
-
 

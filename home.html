@@ -3,6 +3,7 @@
 <head>
   <title>Gerrymander Visualization Project</title>
   <link rel="stylesheet" href="home.css" type="text/css">
+  <script src="jquery-3.2.1.js"></script>
 </head>
 
 <body>
@@ -11,18 +12,46 @@
     </div>
     <div class="left-sidebar"></div>
     <div class="tile-directory">
-      <a href="index.html" class="tile" id="Visualizer">
-        <div>The Visualizer</div>
-      </a>
-      <a href="Explainer.html" class="tile" id="blog-1">
-        <div>RVP Explainer</div>
-      </a>
-      <a href="#" class="tile" id="blog-2">
-        <div>The Gaps in the Efficiency Gap</div>
-      </a>
-      <a href="#" class="tile" id="blog-3">
-        <div>A History of Legal Redistricting</div>
-      </a>
+      <div class="text-block" id="first-text">
+        <p>Hello and welcome to the Redistricting Visualization Project! This project was started after a very simple thought: what if you could scroll through a state's history to view how its congressional districts have changed over time.</p>
+        <p>Below, you can select one of the four currently available states and do exactly that. As part of the Visualizer, you will also find two cards to better understand that map's story. In the first card, you will find simple stats for the displayed map. On the second card, you will find short explainers about what went into that map's redistricting, whether it was simple legislation, district court lawsuit, or the result of a national shift in redistricting.</p>
+      </div>
+      <div class="state-links">
+        <a href="index.html?index=0" id="arizona" class="pic-link" onClick="$('state-chooser').prop('selectedIndex', 0);">
+          <img class="picture" src="images/arizona.png"/>
+          <div class="state-name">Arizona</div>
+        </a>
+        <a href="index.html?index=1" id="massachusetts" class="pic-link">
+          <img class="picture" src="images/massachusetts.png"/>
+          <div class="state-name">Massachusetts</div>
+        </a>
+        <a href="index.html?index=2" id="north-carolina" class="pic-link">
+          <img class="picture" src="images/north-carolina.png"/>
+          <div class="state-name">North Carolina</div>
+        </a>
+        <a href="index.html?index=3" id="wisconsin" class="pic-link">
+          <img class="picture" src="images/wisconsin.png"/>
+          <div class="state-name">Wisconsin</div>
+        </a>
+      </div>
+      <div class="text-block" id="second-text">
+        <p>Below, you can select one of the tiles and read more about the history of redistricting in the United States. "The History of Judicial Redistricting" exaimines the impact that the Supreme Court and the Voting Rights Act have had on redistricting; "The Gaps in the Efficiency Gap" discusses some of the potential shortcomings and consequences of measuring partisan gerrymandering. Both of these articles will be forthcoming by the end of April.</p>
+        <p>If you have any questions or suggestions surrounding the Project, or want to explore the topic further, you can find my contact and sources on the "About" page. Cheers!</p>
+      </div>
+      <div class="blog-links">
+        <a href="#" class="tile" id="blog-1">
+          <div>Overview of Redistricting</div>
+        </a>
+        <a href="#" class="tile" id="blog-2">
+          <div>The History of Judicial Redistricting</div>
+        </a>
+        <a href="#" class="tile" id="blog-3">
+          <div>The Gaps in the Efficiency Gap</div>
+        </a>
+        <a href="About.html" class="tile" id="blog-4">
+          <div>About</div>
+        </a>
+      </div>
     </div>
     <div class="right-sidebar"></div>
 </body>

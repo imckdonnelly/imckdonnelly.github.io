@@ -1,17 +1,18 @@
 $(document).ready(function () {
   
+  function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  }
+  
   var statePaths = [
     {
     "stateName": "Arizona",
     "filePath": "Arizona.json",
     "center": [-111.6602, 34.2744],
     "scale": "4500"
-    },
-    {
-    "stateName": "Wisconsin",
-    "filePath": "Wisconsin.json",
-    "center": [-89.9941, 44.8243],
-    "scale": "4800"
     },
     {
     "stateName": "Massachusetts",
@@ -24,7 +25,14 @@ $(document).ready(function () {
     "filePath": "North_Carolina.json",
     "center": [-79.3877, 35.5557],
     "scale": "4500"
-    }
+    },
+    {
+    "stateName": "Wisconsin",
+    "filePath": "Wisconsin.json",
+    "center": [-89.9941, 44.8243],
+    "scale": "4800"
+    },
+    
   ];
     
   var width = 750;
@@ -178,13 +186,19 @@ $(document).ready(function () {
       // }
   
   
+  
+  function generatePage() {
+    d3.select("#map").selectAll("*").remove();
+    createPage();
+  }
+  
   //Choose state and load everything
   $("#state-chooser").change(function() {
     index = $("#state-chooser").val();
-    d3.select("#map").selectAll("*").remove();
-    createPage();
+    generatePage();
   });
   
-
+  index = getUrlParameter('index');
+  generatePage();
 
 });
