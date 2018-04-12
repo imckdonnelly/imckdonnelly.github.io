@@ -70,8 +70,8 @@ body {
   grid-area: content;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1% max-content 1.8fr max-content 1fr .5%;
-  grid-gap: 1.1%;
+  grid-template-rows: 10px max-content 2fr max-content 1.5fr 30px;
+  grid-gap: 40px;
   grid-template-areas:
     "."
     "text-one"
@@ -180,7 +180,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  grid-row-gap: 4%;
+  grid-row-gap: 20px;
 }
  #blog-1 {
   grid-row-start: 1;
@@ -206,11 +206,6 @@ body {
   text-align: center;
   background-color: #e8d2cd;
   color: black;
-}
-@media only screen and (min-width: 768px) {
-  .tile {
-    font-size: 1.7em;
-  }
 }
 
 
@@ -254,7 +249,7 @@ body {
   
   .blog-links {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: .8fr;
     grid-column-gap: 5%;
     font-size: 1.3em
   }
