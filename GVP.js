@@ -6,6 +6,19 @@ $(document).ready(function () {
     var results = regex.exec(location.search);
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
   }
+  d3.selection.prototype.moveToFront = function() {  
+      return this.each(function(){
+        this.parentNode.appendChild(this);
+      });
+    };
+    d3.selection.prototype.moveToBack = function() {  
+        return this.each(function() { 
+            var firstChild = this.parentNode.firstChild; 
+            if (firstChild) { 
+                this.parentNode.insertBefore(this, firstChild); 
+            } 
+        });
+    };
   
   var statePaths = [
     {
@@ -132,7 +145,14 @@ $(document).ready(function () {
       .enter().append("path")
         .attr("d", path)
         .attr("class", "district")
-        .attr("id", function(d) {return "district-" + d.properties.district;});
+        .attr("id", function(d) {return "district-" + d.properties.district;})
+        .on('mouseover', function(d) {
+            d3.select(this).moveToFront();
+        })
+        .on('click', function(d) {
+            d3.select(this).moveToBack();
+        });
+
         // .attr("opacity",0)
         // .transition()
         // .duration(1000)
@@ -200,5 +220,9 @@ $(document).ready(function () {
   
   index = getUrlParameter('index');
   generatePage();
+
+   
+   
+    
 
 });
