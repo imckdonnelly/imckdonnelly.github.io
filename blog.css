@@ -3,21 +3,13 @@ body {
   margin: 0;
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 150px 1fr;
-  grid-template-columns: 75px 1fr 75px;
+  grid-template-rows: max-content 1fr;
+  grid-template-columns: 7% 1fr 7%;
   grid-template-areas:
     "header header header"
-    "content content content";
+    ". content .";
 }
-@media only screen and (min-width: 768px) {
-  body {
-    grid-template-rows: 85px 1fr;
-    grid-template-columns: 80px 1fr 80px;
-    grid-template-areas:
-      "header header header"
-      "content content content";
-  }
-}
+
 @media only screen and (min-width: 992px) {
   body {
     grid-template-rows: 85px 1fr;
@@ -30,18 +22,15 @@ body {
 
 .title {
   grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: span 2;
+  grid-column-start: 2;
   background-color: #7187f3;
   display: grid;
   align-items: center;
   text-align: center;
 }
-
 @media only screen and (min-width: 992px) {
   .title {
-    grid-column-start: 1;
-    grid-column-end: span 3;
+    grid-column-start: 2;
     justify-items: center;
   }
 }
@@ -51,12 +40,11 @@ body {
   margin: 0;
   padding: .4em;
   color: #ffffff;
-  text-align: right;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .top-fill {
     font-size: 2em;
-    text-align: center;
   }
 }
 
@@ -102,11 +90,23 @@ body {
 .main-content {
   grid-area: content;
   display: grid;
-  grid-template-rows: 77px 1fr 77px;
-  grid-template-columns: 20% 1fr 20%;
-  grid-template-areas:
-      "top-border  top-border  top-border"
-      "left-border  text  right-border";
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px max-content 20px;
+  grid-template-areas: 
+    "."
+    "text"
+    ".";
+}  
+
+@media only screen and (min-width: 992px) {
+  .main-content {
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 77px max-content 77px;
+    grid-template-areas: 
+      ". . ."
+      ". text ."
+      ". . .";
+  }
 }  
 
 .text-area {
@@ -116,14 +116,10 @@ body {
   border-width: 2px;
   border-radius: 15px;
   box-shadow: 0 0 2px 0 #000000;
-  padding: 1.2em 4%;
+  padding: .8em 4%;
   background-color: white;
-
 }
 
 .text-area h1 {
     text-align: center;
-}
-
-.text-area p {
 }
