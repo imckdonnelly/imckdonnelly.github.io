@@ -5,28 +5,30 @@ html {
   box-sizing: inherit;
 }
 
+/*Body Declaration*/
 body {
   font-family: "Helvatica", Arial, sans;
   margin: 0;
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: 150px 1fr;
-  grid-template-columns: 1fr;
+  min-height: 135vh;
+  grid-template-rows: max-content 1fr;
+  grid-template-columns: 5% 1fr 5%;
   grid-template-areas:
-    "header"
-    "content";
+    "header header header"
+    ". content .";
 }
 @media only screen and (min-width: 768px) {
   body {
-    grid-template-rows: 85px 1fr;
-    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: 5% 1fr 5%;
     grid-template-areas:
       "header header header"
-      "content content content";
+      ". content .";
   }
 }
 @media only screen and (min-width: 992px) {
   body {
+    min-height: 100vh;
     grid-template-rows: 85px 1fr;
     grid-template-columns: 100px 1fr 100px;
     grid-template-areas:
@@ -35,12 +37,14 @@ body {
   }
 }
 
+/*Top of Page Declaration*/
 .title {
   grid-area: header;
   background-color: #7187f3;
   display: grid;
   justify-items: center;
   align-items: center;
+  text-align: center;
 }
 
 .top-fill {
@@ -60,12 +64,23 @@ body {
   background-color: #7187f3;
 }
 
+/*Tile Directory Establishment*/
 .tile-directory {
   background-color: white;
   grid-area: content;
   display: grid;
-
+  grid-template-columns: 1fr;
+  grid-template-rows: 1% max-content 1.8fr max-content 1fr .5%;
+  grid-gap: 1.1%;
+  grid-template-areas:
+    "."
+    "text-one"
+    "state-links"
+    "text-two"
+    "blog-links"
+    ".";;
 }
+
 @media only screen and (min-width: 992px) {
   .tile-directory {
   grid-template-columns: 3% 1fr 3%;
@@ -82,42 +97,32 @@ body {
   }
 }
 
-.tile {
-  border-color: black;
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 1.6em;
-  display: grid;
-  align-items: center;
-  text-align: center;
-  background-color: #e8d2cd;
-  color: black;
-}
-
 .text-block {
   border-color: black;
   border-style: solid;
   padding: 0.2em .6em;
 }
 
+
+/*Picture Link Positioning*/
 .pic-link {
   border: solid;
   text-decoration: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "tile";
-  justify-items: center;
-  align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-areas: "tile";
+    justify-items: center;
+    align-items: center;
 }
+
 .picture {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   grid-area: tile;
 }
+
 .state-name {
   text-decoration: none;
   visibility: hidden;
@@ -125,6 +130,7 @@ body {
   font-size: 1.8em;
   color: black;
   grid-area: tile;
+  text-align: center;
 }
 .pic-link:hover .state-name {
   visibility: visible;
@@ -135,36 +141,109 @@ body {
 }
 
 
-
-@media only screen and (min-width: 992px) {
-  #first-text {
+/*Main Content Positioning*/
+#first-text {
     grid-area: text-one;
   }
+
+.state-links {
+  grid-area: state-links;
+  display: grid;
+  grid-template-columns: 1% repeat(2, 1fr) 1%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5%;
+}
+#arizona {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+#massachusetts {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+#north-carolina {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+#wisconsin {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  padding-bottom: 1%;
+}
+
+#second-text {
+  grid-area: text-two;
+}
+
+.blog-links {
+  grid-area: blog-links;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 4%;
+}
+ #blog-1 {
+  grid-row-start: 1;
+}
+#blog-2 {
+  grid-row-start: 2;
+}
+#blog-3 {
+  grid-row-start: 3;
+}
+#blog-4 {
+  grid-row-start: 4;
+}
+.tile {
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 3em;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background-color: #e8d2cd;
+  color: black;
+}
+@media only screen and (min-width: 768px) {
+  .tile {
+    font-size: 1.7em;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
   .state-links {
-    grid-area: state-links;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 3%;
   }
- 
   #arizona {
     grid-column-start: 1;
+    grid-row-start: 1;
   }
   #massachusetts {
     grid-column-start: 2;
+    grid-row-start: 1;
   }
   #north-carolina {
     grid-column-start: 3;
+    grid-row-start: 1;
   }
   #wisconsin {
     grid-column-start: 4;
+    grid-row-start: 1;
     padding-bottom: 1%;
   }
   
-  #second-text {
-    grid-area: text-two;
+  .tile {
+    font-size: 1.3em
   }
-  
+  .tile div {
+    padding: .2em;
+  }
   .tile:hover {
     opacity: .7;
   }
@@ -172,23 +251,28 @@ body {
     color: #7187f3;
     opacity: 1;
   }
+  
   .blog-links {
-    grid-area: blog-links;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 5%;
+    font-size: 1.3em
   }
   #blog-1 {
     grid-column-start: 1;
+    grid-row-start: 1;
   }
   #blog-2 {
     grid-column-start: 2;
+    grid-row-start: 1;
   }
   #blog-3 {
     grid-column-start: 3;
+    grid-row-start: 1;
   }
   #blog-4 {
     grid-column-start: 4;
+    grid-row-start: 1;
   }
 }
 
