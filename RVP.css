@@ -1,0 +1,222 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Helvatica", Arial, sans;
+  display: grid;
+  grid-template-rows: 100px max-content 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "map"
+    "content";
+}
+@media only screen and (min-width: 992px) {
+  body {
+    grid-template-rows: 85px max-content 1fr;
+    grid-area: header;
+  }
+}
+
+/*Top of Page*/
+.header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 7% 1fr max-content;
+}
+@media only screen and (min-width: 992px) {
+  .header {
+    grid-template-columns: 100px 1fr max-content;
+  }
+}
+
+.back-button {
+  background-color: #ff9e21;
+  text-decoration: none;
+  opacity: 1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: black;
+}
+.back-button:hover {
+  background-color: #c16030;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr repeat(5, max-content) 1fr;
+  grid-template-areas: 
+    ". state-name boundry year-start hyphen year-end .";
+  background-color: #7187f3;
+  color: white;
+  justify-items: center;
+  align-items: center;
+}
+.top-fill {
+  padding: .4em;
+  margin: 0;
+  font-size: 1.8em;
+}
+@media only screen and (min-width: 992px) {
+  .title {
+  }
+  #state-name {
+    grid-area: state-name;
+  }
+  #boundry {
+    grid-area: boundry;
+  }
+  #year-start {
+    grid-area: year-start;
+    padding: .4em 0 .4em .4em;
+  }
+  #hyphen {
+    grid-area: hyphen;
+    padding: .4em .1em;
+  }
+  #year-end {
+    grid-area: year-end;
+    padding: .4em .4em .4em 0;
+  }
+}
+
+/*Map aka Middle of Page*/
+.map-center {
+  text-align: center;
+}
+/*District Coloring*/
+#district-1 {
+  fill: Black;
+}
+#district-2 {
+  fill: #a6cee3;
+}
+#district-3 {
+  fill: #1f78b4;
+}
+#district-4 {
+  fill: #b2df8a;
+}
+#district-5 {
+  fill: #33a02c;
+}
+#district-6 {
+  fill: #fb9a99;
+}
+#district-7 {
+  fill: #e31a1c;
+}
+#district-8 {
+  fill: #fdbf6f;
+}
+#district-9 {
+  fill: #ff7f00;
+}
+#district-10 {
+  fill: #cab2d6;
+}
+#district-11 {
+  fill: #6a3d9a;
+}
+#district-12 {
+  fill: #ffff99;
+}
+#district-13 {
+  fill: #b15928;
+}
+#district-14 {
+  fill: #6554BF;
+}
+#district-15 {
+  fill: #BA8D60;
+}
+#district-16 {
+  fill: #E5E567;
+}
+#district-17{
+  fill: #CE8393;
+}
+#district-18 {
+  fill: #BEB0AF;
+}
+#district-19 {
+  fill: #EFA564;
+}
+.district {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.district:hover {
+  stroke: #000000;
+}
+
+.scroll-bar {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  justify-items: center;
+  align-items: center;
+}
+.bar {
+  width: 100%;
+}
+#scroller {
+  width: 100%;
+}
+
+/*Content aka Bottom of Page*/
+.context-container {
+  grid-area: content;
+  background-color: #7187f3;
+  display: grid;
+  grid-template-columns: 3% 35% 1% 40% 3%;
+  grid-template-rows: 15px 1fr .1fr;
+  grid-gap: 1.5%;
+  grid-template-areas: 
+    ". . . . ."
+    ". left-card . right-card ."
+    ". . . . .";
+  align-items: start;
+  justify-content: space-around;
+}
+.text-card {
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 15px;
+  background-color: white;
+  text-align: left;
+  line-height: 1.7em;
+}
+.text-card h3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#context {
+  grid-area: left-card;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-template-columns: max-content 1fr;
+}
+
+#paragraph {
+  grid-area: right-card;
+}
+
+.static-text {
+  padding: 0 1.5em;
+}
+.json-text {
+  padding: 0 1.5em;
+}
+.box-text {
+  padding: 0 1.5em;
+}

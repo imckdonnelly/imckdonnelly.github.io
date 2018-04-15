@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Visualizer</title>
-  <link rel="stylesheet" href="GVP.css" type="text/css">
+  <title>WORKING Visualizer</title>
+  <link rel="stylesheet" href="RVP.css" type="text/css">
   <script src="d3.min.js"></script>
   <script src="topojson.js"></script>
   <script src="jquery-3.2.1.js"></script>
@@ -11,12 +11,16 @@
 
 <body>
   <div class="header">
+    <a href="home.html" class="back-button">
+      <div>Home</div>
+    </a>
     <div class="title">
       <p class="top-fill" id="state-name"></p>
-      <p class="top-fill">|</p>
-      <p class="top-fill" id="year-start"></p>
-      <p class="top-fill" id="hyphen">-</p>
-      <p class="top-fill" id="year-end"></p>
+      <p class="top-fill" id="boundry">|</p>
+      <p class="top-fill year-define" id="year-start"></p>
+      <p class="top-fill year-define" id="hyphen">-</p>
+      <p class="top-fill year-define" id="year-end"></p>
+    </div>
     <div class="state-select">
       <select id="state-chooser">
         <option value="" selected="selected">Choose a State</option>
@@ -26,52 +30,49 @@
         <option value="3">Wisconsin</option>
       </select>
     </div>
-    </div>
-    <div class="map-container">
-      <div class="map-center">
-        <div id=map></div>
+  </div>
+  <div class="map-container">
+    <div class="map-center" id="map"></div>
+    <div class="scroll-bar">
+      <div class="scroll" id="time-start"></div>
+      <div class="scroll" id="scroller">
+        <input type="range" class="bar" step="2" list="date-list" id="state-dates">
+        <datalist id="date-list">
+          <option id="firstMap"></option>
+          <option id="secondMap"></option>
+          <option id="thirdMap"></option>
+          <option id="fourthMap"></option>
+          <option id="fifthMap"></option>
+          <option id="sixthMap"></option>
+          <option id="seventhMap"></option>
+          <option id="eighthMap"></option>
+          <option id="ninthMap"></option>
+          <option id="tenthMap"></option>
+          <option id="eleventhMap"></option>
+          <option id="map-12"></option>
+          <option id="map-13"></option>
+          <option id="map-14"></option>
+          <option id="map-15"></option>
+          <option id="map-16"></option>
+          <option id="map-17"></option>
+          <option id="map-18"></option>
+          <option id="map-19"></option>
+          <option id="map-20"></option>
+          <option></option>
+          <option></option>
+          <option id="map-23"></option>
+          <option id="map-24"></option>
+          <option id="map-25"></option>
+          <option id="map-26"></option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option id="map-31"></option>
+          <option id="map-32"></option>
+        </datalist>
       </div>
-      <div class="scroll-bar">
-        <div class="scroll" id="time-start"></div>
-        <div class="scroll" id="scroller">
-          <input type="range" class="bar" step="2" list="date-list" id="state-dates">
-          <datalist id="date-list">
-            <option id="firstMap"></option>
-            <option id="secondMap"></option>
-            <option id="thirdMap"></option>
-            <option id="fourthMap"></option>
-            <option id="fifthMap"></option>
-            <option id="sixthMap"></option>
-            <option id="seventhMap"></option>
-            <option id="eighthMap"></option>
-            <option id="ninthMap"></option>
-            <option id="tenthMap"></option>
-            <option id="eleventhMap"></option>
-            <option id="map-12"></option>
-            <option id="map-13"></option>
-            <option id="map-14"></option>
-            <option id="map-15"></option>
-            <option id="map-16"></option>
-            <option id="map-17"></option>
-            <option id="map-18"></option>
-            <option id="map-19"></option>
-            <option id="map-20"></option>
-            <option></option>
-            <option></option>
-            <option id="map-23"></option>
-            <option id="map-24"></option>
-            <option id="map-25"></option>
-            <option id="map-26"></option>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option id="map-31"></option>
-            <option id="map-32"></option>
-          </datalist>
-        </div>
-        <div class="scroll" id="time-end"></div>
-      </div>
+      <div class="scroll" id="time-end"></div>
     </div>
   </div>
   <div class="context-container">
