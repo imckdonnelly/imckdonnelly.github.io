@@ -29,12 +29,14 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 7% 1fr max-content;
+  
 }
 @media only screen and (min-width: 992px) {
   .header {
     grid-template-columns: 100px 1fr max-content;
   }
 }
+
 
 .back-button {
   background-color: #ff9e21;
@@ -86,6 +88,13 @@ body {
     padding: .4em .4em .4em 0;
   }
 }
+
+.state-select {
+  display: grid;
+  align-items: stretch;
+}
+
+
 
 /*Map aka Middle of Page*/
 .map-center {
@@ -175,13 +184,13 @@ body {
   grid-area: content;
   background-color: #7187f3;
   display: grid;
-  grid-template-columns: 3% 35% 1% 40% 3%;
+  grid-template-columns: 35% 45%;
   grid-template-rows: 15px 1fr .1fr;
   grid-gap: 1.5%;
   grid-template-areas: 
-    ". . . . ."
-    ". left-card . right-card ."
-    ". . . . .";
+    ". ."
+    "left-card right-card"
+    ". .";
   align-items: start;
   justify-content: space-around;
 }
@@ -194,29 +203,35 @@ body {
   line-height: 1.7em;
 }
 .text-card h3 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin-bottom: 0;
   text-align: center;
+  margin-bottom: 0;
 }
 
 #context {
   grid-area: left-card;
-  display: grid;
-  grid-template-rows: max-content 1fr;
-  grid-template-columns: max-content 1fr;
-}
 
-#paragraph {
-  grid-area: right-card;
+}
+.context-text {
+  
 }
 
 .static-text {
   padding: 0 1.5em;
+
+}
+.static-text p {  
+  align-self: start;
 }
 .json-text {
   padding: 0 1.5em;
+
+}
+.json-text p {
 }
 .box-text {
   padding: 0 1.5em;
+}
+
+#paragraph {
+  grid-area: right-card;
 }
