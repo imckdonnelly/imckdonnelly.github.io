@@ -1,137 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WORKING Visualizer</title>
-  <link rel="stylesheet" href="RVP.css" type="text/css">
-  <script src="d3.min.js"></script>
-  <script src="topojson.js"></script>
+  <title>Redistricting Visualization Project</title>
+  <link rel="stylesheet" href="home.css" type="text/css">
   <script src="jquery-3.2.1.js"></script>
-  <script src="GVP.js"></script>
+  <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 
 <body>
-  <div class="header">
-    <a href="home.html" class="back-button">
-      <div id="home">Home</div>
-    </a>
     <div class="title">
-      <p class="top-fill" id="state-name"></p>
-      <p class="top-fill" id="boundry">|</p>
-      <p class="top-fill year-define" id="year-start"></p>
-      <p class="top-fill year-define" id="hyphen">-</p>
-      <p class="top-fill year-define" id="year-end"></p>
+      <p class="top-fill">Redistricting Visualization Project</p>
     </div>
-    <div class="state-select">
-      <select id="state-chooser">
-        <option value="" disabled="disabled" selected="selected">Choose a State</option>
-        <option value="0">Arizona</option>
-        <option value="1">Massachusetts</option>
-        <option value="2">North Carolina</option>
-        <option value="3">Wisconsin</option>
-      </select>
-    </div>
-  </div>
-  <div class="map-container">
-    <div class="map-center" id="map"></div>
-    <div class="scroll-bar">
-      <div class="scroll" id="time-start"></div>
-      <div class="scroll" id="scroller">
-        <input type="range" class="bar" step="2" list="date-list" id="state-dates">
-        <datalist id="date-list">
-          <option id="firstMap"></option>
-          <option id="secondMap"></option>
-          <option id="thirdMap"></option>
-          <option id="fourthMap"></option>
-          <option id="fifthMap"></option>
-          <option id="sixthMap"></option>
-          <option id="seventhMap"></option>
-          <option id="eighthMap"></option>
-          <option id="ninthMap"></option>
-          <option id="tenthMap"></option>
-          <option id="eleventhMap"></option>
-          <option id="map-12"></option>
-          <option id="map-13"></option>
-          <option id="map-14"></option>
-          <option id="map-15"></option>
-          <option id="map-16"></option>
-          <option id="map-17"></option>
-          <option id="map-18"></option>
-          <option id="map-19"></option>
-          <option id="map-20"></option>
-          <option></option>
-          <option></option>
-          <option id="map-23"></option>
-          <option id="map-24"></option>
-          <option id="map-25"></option>
-          <option id="map-26"></option>
-          <option></option>
-          <option></option>
-          <option></option>
-          <option></option>
-          <option id="map-31"></option>
-          <option id="map-32"></option>
-        </datalist>
+    <div class="left-sidebar"></div>
+    <div class="tile-directory">
+      <div class="text-block" id="first-text">
+        <p>Hello and welcome to the Redistricting Visualization Project! This project was started after a very simple thought: what if you could scroll through a state's history to view how its congressional districts have changed over time.</p>
+        <p>Below, you can select one of the four currently available states and do exactly that. As part of the Visualizer, you will also find two cards to better understand that map's story. In the first card, you will find simple stats for the displayed map. On the second card, you will find short explainers about what went into that map's redistricting, whether it was simple legislation, district court lawsuit, or the result of a national shift in redistricting.</p>
       </div>
-      <div class="scroll" id="time-end"></div>
-    </div>
-    <!--This will be used in the future for a mobile date selector-->
-    <div class="date-chooser">
-      <select id="dates">
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-      </select>
-    </div>
-  </div>
-  <div class="context-container">
-    <div class="text-card" id="context">
-      <h3>Contexual Information</h3>
-      <div class="context-text">
-          <p class="static-text" id="leg-con">Party Control of State Legislature:</p>
-          <p class="fill-in" id="leg-control"></p>
-          <p class="static-text" id="gov-con">Party Control of Governorship:</p>
-          <p class="fill-in" id="gov-control"></p>
-          <p class="static-text" id="rep-number">Number of Representatives:</p>
-          <p class="fill-in" id="rep-num"></p>
-          <p class="static-text" id="population">Population (at last apportionment):</p>
-          <p class="fill-in" id="pop"></p>
-          <p class="static-text" id="red-type">Method of Redistricting:</p>
-          <p class="fill-in" id="redist-type"></p>
+      <div class="state-links">
+        <a href="visualizer.html?index=0" id="arizona" class="pic-link">
+          <img class="picture" src="images/arizona.png"/>
+          <div class="state-name">Arizona</div>
+        </a>
+        <a href="visualizer.html?index=1" id="massachusetts" class="pic-link">
+          <img class="picture" src="images/massachusetts.png"/>
+          <div class="state-name">Massachusetts</div>
+        </a>
+        <a href="visualizer.html?index=2" id="north-carolina" class="pic-link">
+          <img class="picture" src="images/north-carolina.png"/>
+          <div class="state-name">North Carolina</div>
+        </a>
+        <a href="visualizer.html?index=3" id="wisconsin" class="pic-link">
+          <img class="picture" src="images/wisconsin.png"/>
+          <div class="state-name">Wisconsin</div>
+        </a>
+      </div>
+      <div class="text-block" id="second-text">
+        <p>Below, you can select one of the tiles and read more about the history of redistricting in the United States. "The History of Judicial Redistricting" exaimines the impact that the Supreme Court and the Voting Rights Act have had on redistricting; "The Gaps in the Efficiency Gap" discusses some of the potential shortcomings and consequences of measuring partisan gerrymandering. Both of these articles will be forthcoming by the end of April.</p>
+        <p>If you have any questions or suggestions surrounding the Project, or want to explore the topic further, you can find my contact and sources on the "About" page. Cheers!</p>
+      </div>
+      <div class="blog-links">
+        <a href="#" class="tile" id="blog-1">
+          <div>Overview of Redistricting</div>
+        </a>
+        <a href="#" class="tile" id="blog-2">
+          <div>The History of Judicial Redistricting</div>
+        </a>
+        <a href="#" class="tile" id="blog-3">
+          <div>The Gaps in the Efficiency Gap</div>
+        </a>
+        <a href="About.html" class="tile" id="blog-4">
+          <div>About</div>
+        </a>
       </div>
     </div>
-    <div class="text-card" id="paragraph">
-      <h3>Why did it change?</h3>
-      <div class="box-text" id="context-paragraph">
-        <p id="context-one"></p>
-        <p id="context-two"></p>
-        <p id="context-three"></p>
-      </div>
-    </div>
-  </div>
+    <div class="right-sidebar"></div>
 </body>
 </html>
