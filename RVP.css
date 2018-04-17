@@ -4,6 +4,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+/**{ border: 1px solid red; }*/
 
 body {
   min-height: 100vh;
@@ -37,7 +38,6 @@ body {
   }
 }
 
-
 .back-button {
   background-color: #ff9e21;
   text-decoration: none;
@@ -50,45 +50,68 @@ body {
 .back-button:hover {
   background-color: #c16030;
 }
-
+@media only screen and (max-width: 992px) {
+  #home {
+    display: none;
+  }
+}
 .title {
-  display: grid;
-  grid-template-columns: 1fr repeat(5, max-content) 1fr;
-  grid-template-areas: 
-    ". state-name boundry year-start hyphen year-end .";
+  text-align: center;
   background-color: #7187f3;
   color: white;
-  justify-items: center;
-  align-items: center;
 }
 .top-fill {
+  display: inline-block;
+  text-align: center;
+  font-size: 2.6em;
   padding: .4em;
-  margin: 0;
-  font-size: 1.8em;
+  margin: 1% 0 0 0;
 }
+#year-start {
+  padding: .4em 0 .4em .4em;
+}
+#hyphen {
+  padding: .4em .1em;
+}
+#year-end {
+  padding: .4em .4em .4em 0;
+}
+
 @media only screen and (min-width: 992px) {
   .title {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr repeat(5, max-content) 1fr;
+    grid-template-areas: 
+        ". state-name boundry year-start hyphen year-end .";
+    
+    justify-items: center;
+    align-items: center;
   }
-  #state-name {
-    grid-area: state-name;
-  }
-  #boundry {
-    grid-area: boundry;
-  }
-  #year-start {
-    grid-area: year-start;
-    padding: .4em 0 .4em .4em;
-  }
-  #hyphen {
-    grid-area: hyphen;
-    padding: .4em .1em;
-  }
-  #year-end {
-    grid-area: year-end;
-    padding: .4em .4em .4em 0;
+    #state-name {
+      grid-area: state-name;
+    }
+    #boundry {
+      grid-area: boundry;
+    }
+    #year-start {
+      grid-area: year-start;
+    }
+    #hyphen {
+      grid-area: hyphen;
+    }
+    #year-end {
+      grid-area: year-end;
+    }
+  .top-fill {
+    padding: .4em;
+    margin: 0;
   }
 }
 
+select {
+  background: #ff9e21;
+}
 .state-select {
   display: grid;
   align-items: stretch;
@@ -166,6 +189,10 @@ body {
   stroke: #000000;
 }
 
+/*Slider*/
+.date-chooser {
+  display: none;
+}
 .scroll-bar {
   display: grid;
   grid-template-columns: 5% 90% 5%;
@@ -178,21 +205,46 @@ body {
 #scroller {
   width: 100%;
 }
+@media only screen and (max-width: 992px) {
+  .scroll {
+    font-size: .5em;
+  }
+  .scroll-bar {
+    grid-template-columns: 10% 80% 10%;
+  }
+  #time-end {
+    align-items: start;
+  }
+}
 
 /*Content aka Bottom of Page*/
 .context-container {
-  grid-area: content;
   background-color: #7187f3;
   display: grid;
-  grid-template-columns: 35% 45%;
-  grid-template-rows: 15px 1fr .1fr;
-  grid-gap: 1.5%;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: 20px max-content 20px max-content 20px;
   grid-template-areas: 
-    ". ."
-    "left-card right-card"
-    ". .";
-  align-items: start;
+    ". . ."
+    ". card-one ."
+    ". . ."
+    ". card-two ."
+    ". . .";
   justify-content: space-around;
+  grid-gap: 1.5%;
+}
+@media only screen and (min-width: 992px) {
+  .context-container {
+    grid-area: content;
+    grid-template-columns: minmax(30%, max-content) 45%;
+    grid-template-rows: 15px 1fr .1fr;
+    grid-gap: 1.5%;
+    grid-template-areas: 
+      ". ."
+      "card-one card-two"
+      ". .";
+    align-items: start;
+    justify-content: space-around;
+  }
 }
 .text-card {
   border-style: solid;
@@ -204,34 +256,78 @@ body {
 }
 .text-card h3 {
   text-align: center;
-  margin-bottom: 0;
+  font-size: 2.8em;
+}
+.text-card p {
+  font-size: .75em;
+}
+@media only screen and (min-width: 992px) {
+  .text-card h3 {
+    font-size: 1.5em;
+  }
+  .text-card p {
+    font-size: 1em;
+  }
 }
 
+/*Left Card*/
 #context {
-  grid-area: left-card;
-
+  grid-area: card-one;
 }
+
 .context-text {
-  
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "leg-con leg-control"
+    "gov-con gov-control"
+    "rep-number rep-num"
+    "population pop"
+    "red-type redist-type";
+  padding: 0 1.5em 8px 1.5em;
+  align-items: end;
+}
+@media only screen and (min-width: 992px) {
+  .context-text {
+    grid-template-columns: max-content 1fr;
+  }
 }
 
+.context-text p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.fill-in {
+  grid-column-start: 2;
+}
 .static-text {
-  padding: 0 1.5em;
+  grid-column-start: 1;
+  padding-right: 1.5em;
+}
+.leg-con {
+  grid-area: leg-con;
+}
+#leg-control {
+  grid-area: leg-control;
+}
+.gov-con {
+  grid-area: gov-control;
+}
+.rep-number {
+  grid-area: rep-num;
+}
+.population {
+  grid-area: pop;
+}
+.red-type {
+  grid-area: redist-type;
+}
 
-}
-.static-text p {  
-  align-self: start;
-}
-.json-text {
-  padding: 0 1.5em;
-
-}
-.json-text p {
-}
+/*Right Box*/
 .box-text {
   padding: 0 1.5em;
 }
-
 #paragraph {
-  grid-area: right-card;
+  grid-area: card-two;
 }
