@@ -12,7 +12,7 @@
    "pop": "393,751",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_1_to_1.json",
-   "context": "",
+   "context": "When the United States Constitution was ratified, North Carolina was apportioned 5 representatives. In <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p16062coll9/id/264608\">Chapter 1</a> of the Acts of 1789, the North Carolina legislature drew the state into 5 districts. The area that is now the state of Tennessee was at that time a part of North Carolina, and was included as two separate districts. This map would last until the 2nd Congress in 1791.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -29,7 +29,7 @@
    "pop": "393,751",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_2_to_2.json",
-   "context": "",
+   "context": "In 1790, the area of Tennessee was <a href=\"https://www.loc.gov/law/help/statutes-at-large/1st-congress/c1.pdf\">split</a> from North Carolina in preparation for its own admission of statehood (not granted until 1796). With the loss of the area however, North Carolina redistricted itself in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p16062coll9/id/264263\">Chapter 1</a> of the Acts of 1790 into five districts within the modern borders of North Carolina. This map would last until the 3rd Congress in 1793.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -46,7 +46,7 @@
    "pop": "393,751",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_3_to_7.json",
-   "context": "",
+   "context": "In 1790, the United States completed its very first census, and the subsequent reapportionment found that North Carolina was entitled to 10 representatives, an increase of 5. Consequently, North Carolina restricted itself in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p16062coll9/id/264651\">Chapter 17</a> of the Acts of 1792. This map would last until the 8th Congress in 1803.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -63,7 +63,7 @@
    "pop": "478,103",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_8_to_12.json",
-   "context": "",
+   "context": "After the census of 1800, North Carolina was reapportioned 2 more representatives, bringing its total to 12. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p16062coll9/id/265044\">Chapter 2</a> of the Acts of 1802. This map would last until the 13th Congress in 1813.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -80,7 +80,7 @@
    "pop": "555,500",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_13_to_27.json",
-   "context": "",
+   "context": "After the census of 1810, North Carolina was reapportioned 1 more representatives, bringing its total to 13. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p16062coll9/id/265570\">Chapter 6</a> of the Acts of 1812. This map would last an unusually long 30 years until the 28th Congress in 1843.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -97,7 +97,7 @@
    "pop": "753,419",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_28_to_29.json",
-   "context": "",
+   "context": "After the census of 1840, North Carolina was reapportioned 4 less representatives, reducing its total to 9. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/164653\">Chapter 25</a> of the Acts of 1843. This map would last until the 30th Congress in 1847.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -114,7 +114,7 @@
    "pop": "753,419",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_30_to_32.json",
-   "context": "",
+   "context": "In January of 1847, the North Carolina legislature passed <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/165583\">Chapter 21</a> of the Acts of 1847, redrawing the state’s 9 districts. This map would last until the 33rd Congress in 1853.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -131,7 +131,7 @@
    "pop": "869,039",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_33_to_36.json",
-   "context": "",
+   "context": "After the census of 1850, North Carolina was reapportioned 1 less representative, reducing its total to 8. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/167998\">Chapter 21</a> of the Laws of 1852. This map would last until the 37th Congress in 1861, when North Carolina seceded from the Union.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -148,8 +148,8 @@
    "pop": "869,039",
    "redistType": "Confederate Legislature",
    "fileName": "",
-   "context": "",
-   "contextTwo": "",
+   "context": "From 1861 until 1867, the state of North Carolina <a href=\"http://docsouth.unc.edu/imls/ncconven/ncconven.html#nccon3\">seceded</a> from the United States of America, and was a founding member of the Confederate States of America. The election of Abraham Lincoln in 1860 signalled to the South that the end of the white supremacist institution of slavery was inevitable and consequently left the union to preserve the practice.",
+   "contextTwo": "The following Civil War, fought from 1861-1865, eventually secured the preservation of the Union and the return of the Southern states, including North Carolina, as well as the passage of the 13th, 14th, and 15th Amendments.",
    "contextThree": ""
  },
  {
@@ -165,8 +165,8 @@
    "pop": "992,622",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_40_to_42.json",
-   "context": "",
-   "contextTwo": "",
+   "context": "After their loss in the Civil War, the state of North Carolina passed a resolution in 1865 titled “<a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/177186\">Resolution Declaring the Loyalty of the People of North Carolina</a>.” In 1868, North Carolina held a constitutional convention to plan for readmission into the Union.",
+   "contextTwo": "One of the <a href=\"http://docsouth.unc.edu/nc/conv1868/conv1868.html\">ordinances</a> of the Convention divided the state into 7 congressional districts, reapportioned down from 8 after the census of 1860 (while the state was a member of the Confederacy). After the state had ratified the 14th Amendment, a requirement for readmission, representatives were once again allowed to join the House of Representatives. This map, drawn by the Constitutional Convention, would last until the 43rd Congress in 1873.",
    "contextThree": ""
  },
  {
@@ -182,7 +182,7 @@
    "pop": "1,071,361",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_43_to_47.json",
-   "context": "",
+   "context": "After the census of 1870, North Carolina was reapportioned 1 more representative, bringing its total to 8. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/178737\">Chapter 171</a> of the Public Laws of 1871-1872. This map would last until the 49th Congress in 1885.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -199,7 +199,7 @@
    "pop": "1,399,750",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_48_to_48.json",
-   "context": "",
+   "context": "After the census of 1870, North Carolina was reapportioned 1 more representative, bringing its total to 8. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/178737\">Chapter 171</a> of the Public Laws of 1871-1872. This map would last until the 49th Congress in 1885.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -216,7 +216,7 @@
    "pop": "1,399,750",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_49_to_52.json",
-   "context": "",
+   "context": "After the census of 1880, North Carolina was reapportioned 1 more representative, bringing its total to 9. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/198815\">Chapter 226</a> of the Laws of 1883. This map would last until the 53th Congress in 1893.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -233,7 +233,7 @@
    "pop": "1,617,949",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_53_to_54.json",
-   "context": "",
+   "context": "After the census and reapportionment of 1890, the number of representatives from North Carolina did not change, maintaining its number at 9. However, the state legislature did redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/434229\">Chapter 398</a> of the Laws of 1891. This map would last until the 55th Congress in 1897.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -250,7 +250,7 @@
    "pop": "1,617,949",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_55_to_55.json",
-   "context": "",
+   "context": "In 1895, the North Carolina legislature made a slight adjustment to the state’s congressional map, shifting Mitchell County into the 9th district in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/225569\">Chapter 99</a> of the Laws of 1895, only to redraw the entire state’s districts in  <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/225569\">Chapter 159</a>. This map would last only one congressional term, until the 56th Congress in 1899.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -267,7 +267,7 @@
    "pop": "1,617,949",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_56_to_56.json",
-   "context": "",
+   "context": "In <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/227602\">Chapter 307</a> of the Laws of 1897, the North Carolina legislature made slight adjustments to the state’s congressional districts, swapping the counties of Cleveland and Gaston from the eighth district with Yadkin and Davie in the seventh district. This map would last only congressional term, until the 57th Congress in 1901.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -284,7 +284,7 @@
    "pop": "1,617,949",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_57_to_57.json",
-   "context": "",
+   "context": "Between 1899 and 1900, the North Carolina legislature passed a total of 4 bills regarding the state’s congressional districts. <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/229182\">Chapter 172</a> of the Laws of 1899 created a new county, but kept it within the same district. <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/229182\">Chapter 423</a> repealed the previous map’s distinction, swapping Cleveland, Gaston, Yadkin, and Davie counties back to their original districts. <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/229182\">Chapter 507, section 58</a> rewrites the entire list of counties in which district, and <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/226778\">Chapter 1, section 58</a> of the Laws of 1900 reaffirms those districts. This map was only in place for one congressional term, until the 58th Congress in 1903.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -301,7 +301,7 @@
    "pop": "1,893,810",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_58_to_60.json",
-   "context": "",
+   "context": "After the census of 1900, North Carolina was reapportioned 1 more representative, bringing its total to 10. Consequently, the state legislature redistricted the state twice in the <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/642679\">Laws of 1901</a>, once in Chapter 89 section 57, and once in Chapter 441. Oddly, it does not appear that these two chapters create different districts, so it is unclear why they are two separate laws. This map would last until the 61st Congress in 1909.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -318,7 +318,7 @@
    "pop": "1,893,810",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_61_to_62.json",
-   "context": "",
+   "context": "In the <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/643950\">Laws of 1907</a>, the North Carolina legislature passed two different bills (though they appear the same) dealing with the state’s congressional districts, Chapter 834 and Chapter 898. These laws redrew the map of the state and would last until the 63rd Congress in 1913.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -335,7 +335,7 @@
    "pop": "2,206,287",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_63_to_72.json",
-   "context": "",
+   "context": "After the census and reapportionment of 1910, the number of representatives from North Carolina did not change, maintaining its number at 10. However, the state legislature did redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/223965\">Chapter 97</a> of the Laws of 1911. Because Congress did not enact a new apportionment plan after the 1920 census, this map would last until the 73rd Congress in 1933.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -352,7 +352,7 @@
    "pop": "3,170,276",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_73_to_77.json",
-   "context": "",
+   "context": "After the census of 1930, North Carolina was reapportioned 1 more representatives, bringing its total to 11. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/239173\">Chapter 216</a> of the Public Laws of 1931. This map would last until the 78th Congress in 1943.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -369,7 +369,7 @@
    "pop": "3,571,623",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_78_to_87.json",
-   "context": "",
+   "context": "After the census of 1930, North Carolina was reapportioned 1 more representatives, bringing its total to 11. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/244768\">Chapter 3</a> of the Public Laws of 1941. Because North Carolina did not gain nor lose any representatives after the reapportionment of 1950, and because there was no requirement to redistrict, this map would last until the 88th Congress in 1963.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -386,7 +386,7 @@
    "pop": "4,556,155",
    "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_88_to_89.json",
-   "context": "",
+   "context": "After the census of 1960, North Carolina was reapportioned 1 less representatives, reducing its total to 11. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/383925\">Chapter 864</a> of the Public Laws of 1961. This map would last until the 90th Congress in 1967.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -401,9 +401,9 @@
    "govControl": "Dan Killian Moore (Democratic)",
    "repNum": 11,
    "pop": "4,556,155",
-   "redistType": "",
+   "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_90_to_90.json",
-   "context": "",
+   "context": "In 1962 and 1964, the Supreme Court handed down its decisions in <a href=\"https://supreme.justia.com/cases/federal/us/369/186/\"><em>Baker v. Carr</em></a> and <a href=\"https://supreme.justia.com/cases/federal/us/376/1/\"><em>Wesberry v. Sanders</em></a>, ruling that not only were issues of redistricting justiciable, but that congressional districts must be equal in population \"as nearly as practicable.\" As a result of these rulings, Mr. Renn Drum, a citizen of North Carolina, sued Malcolm B. Seawell in his capacity as Chair of the North Carolina Board of Elections in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/249/877/1457661/\"><em>Drum v. Seawell</em></a> (1965), alleging that the state’s congressional districts violated the one person one vote doctrine.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -418,10 +418,10 @@
    "govControl": "Dan Killian Moore (Democratic)",
    "repNum": 11,
    "pop": "5,084,411",
-   "redistType": "",
+   "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_91_to_92.json",
-   "context": "",
-   "contextTwo": "",
+   "context": "At the end of the ruling in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/250/922/2341362/\"><em>Drum v. Seawell</em></a> (1966), the district court mandated that no more elections be held with the previous districts drawn in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/312270\">Chapter 7</a> of the Special Session of 1966. As a result, the state legislature redrew the congressional districts in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/312270\">Chapter 1109</a> of the Session Laws of 1967.",
+   "contextTwo": "After the passage of this law, Mr Renn Drum once again sued the Chair of the Board of Elections, continuing to allege unconstitutional population variances between the districts. In <a href=\"https://www.leagle.com/decision/1967464271fsupp1931433\"><em>Drum v. Seawell</em></a> (1967), the court held that \"the minimum federal constitutional standards have now been met,\" allowing the new map to be used until a new reapportionment in 1970. However, they also added a paragraph at the end of the decision hoping for an end to the \"tortuous lines\" dividing the districts following the 1970 reapportionment. This map would last until the 93rd Congress in 1973.",
    "contextThree": ""
  },
  {
@@ -435,10 +435,10 @@
    "govControl": "Robert Walter Scott (Democratic)",
    "repNum": 11,
    "pop": "5,084,411",
-   "redistType": "",
+   "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_93_to_97.json",
-   "context": "",
-   "contextTwo": "",
+   "context": "After the census and reapportionment of 1970, the number of representatives from North Carolina did not change, maintaining its number at 11. However, because of the one person one vote requirements from the Supreme Court, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/355645\">Chapter 257</a> of the Session Laws of 1971.",
+   "contextTwo": "Following the passage of this statute, Mr Renn Drum once more sued the State Board of Elections for population variance claims. However, the court in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/337/588/1469638/\"><em>Drum v. Seawell</em></a> (1972) ruled that, even with the more strict equal population requirements from <a href=\"https://supreme.justia.com/cases/federal/us/394/526/case.html\"><em>Kirkpatrick v. Preisler</em></a> and <a href=\"https://supreme.justia.com/cases/federal/us/394/542/\"><em>Wells v. Rockefeller</em></a>, the congressional district map still represented a \"good faith effort\" on the part of the legislature, and so was not unconstitutional. This map would last until the 98th Congress in 1983.",
    "contextThree": ""
  },
  {
@@ -452,9 +452,9 @@
    "govControl": "James B. Hunt (Democratic)",
    "repNum": 11,
    "pop": "5,880,095",
-   "redistType": "",
+   "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_98_to_102.json",
-   "context": "",
+   "context": "After the census and reapportionment of 1980, the number of representatives from North Carolina did not change, maintaining its number at 11. However, the state legislature did redistricted the state in two different laws, <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/362798\">Chapter 894</a> of the Sessional Laws of 1981 and <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/319113\">Chapter 7</a> of the Session Laws of 1981-1982. Chapter 7 established the districts that were used until the 103rd Congress in 1993.",
    "contextTwo": "",
    "contextThree": ""
  },
@@ -469,10 +469,10 @@
    "govControl": "James G Martin (Republican)",
    "repNum": 12,
    "pop": "6,628,637",
-   "redistType": "",
+   "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_103_to_105.json",
-   "context": "",
-   "contextTwo": "",
+   "context": "After the census of 1990, North Carolina was reapportioned 1 more representatives, bringing its total to 12. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/336026\">Chapter 601</a> of the Session Laws of 1991, vol I, and submitted it for preclearence by the Attorney General. The submitted plan failed to obtain preclearance, with the Attorney General citing the lack of majority Black districts (there was only one in the plan).",
+   "contextTwo": "About 6 months later, the North Carolina legislature submitted a new plan to the Justice Department, <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/346807 \">Chapter 7</a> of the Session Laws of 1991-1992. In addition to the majority Black district 1, the new scheme included the centrally located majority Black district 12, and was precleared by the Justice Department. This map would last until the 106th Congress in 1999.",
    "contextThree": ""
  },
  {
@@ -486,11 +486,11 @@
    "govControl": "James B. Hunt (Democratic)",
    "repNum": 12,
    "pop": "8,049,313",
-   "redistType": "",
+   "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_106_to_106.json",
-   "context": "",
-   "contextTwo": "",
-   "contextThree": ""
+   "context": "Following the establishment of <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/346807 \">Chapter 7</a> for North Carolina’s congressional districts in January 1992, a slew of lawsuits ping-ponging between the district court, Supreme Court, and state legislature followed. First, in 1992 the district court dismissed the plaintiffs standing in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/809/392/1456062/\"><em>Pope v. Blue</em></a>, a lawsuit alleging 14th Amendment violation of the districts. 4 months later, the district court again ruled on similar issues in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/808/461/1478661/\"><em>Shaw v. Barr</em></a> (1992), this time finding that the plaintiffs had failed to state a claim for relief under \"any of the constitutional provisions invoked,\" thereby upholding the map. The plaintiffs appealed to the Supreme Court, where in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/808/461/1478661/\"><em>Shaw v. Reno</em></a> (1993) the Court reversed and remanded the district court’s ruling in <em>Shaw v. Barr</em> (1992), holding that, since the 12th District was a racially conscious district, the district court must apply strict scrutiny and identify a compelling government interest for a racially biased map.",
+   "contextTwo": "On remand from the Supreme Court, the district court again heard arguments about the 12th District in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/808/461/1478661/\"><em>Shaw v. Hunt</em></a> (1994), applying strict scrutiny as the Supreme Court required. In their ruling, the district court held that complying with the Voting Rights Act to obtain preclearance from the Justice Department was a compelling government interest, because the 12th district was drawn as majority-Black only after the original map was rejected. On appeal (once again), the Supreme Court ruled in  <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp/808/461/1478661/\"><em>Shaw v. Hunt</em></a> (1996) against the state, holding that the argument that complying with the Voting Rights Act was not a compelling government interest in this case, since the Justice Department had held their own authority too broadly and, moreover, that District 12 was not a narrowly tailored remedy to satisfy strict scrutiny. Holding the map a violation of the 14th Amendment, the Court required the legislature to redraw the map.",
+   "contextThree": "In March 1997, the legislature complied with the Supreme Court command, establishing new districts in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/348352\">Chapter 11</a> of the Session Laws of 1997. No sooner was this statute enacted then it was the subject of a district court lawsuit. In <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp2/34/1029/2462399//\"><em>Cromartie v. Hunt</em></a> (1998), the district court ruled that the new District 12 was still unconstitutional, preventing the new map from being used for the upcoming elections. The state appealed, but in the meantime the legislature passed <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/318190\">Chapter 2</a>of the Session Laws of 1997-1998, with a clause that, in the event the appeal of <em>Cromartie v. Hunt</em> (1998) was successful, Chapter 11’s map would go into effect over Chapter 2. Before a decision could be made however, the 1998 elections went ahead, using Chapter 2’s map. This map would last for one congressional term, until the 107th Congress in 2001."
  },
  {
    "fileNumber": "29",
@@ -503,10 +503,10 @@
    "govControl": "James B. Hunt (Democratic)",
    "repNum": 12,
    "pop": "8,049,313",
-   "redistType": "",
+   "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_107_to_107.json",
-   "context": "",
-   "contextTwo": "",
+   "context": "After the 1998 election went ahead with the map established in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/318190\">Chapter 2</a>of the Session Laws of 1997-1998, the Supreme Court ruled in <a href=\"https://supreme.justia.com/cases/federal/us/526/541/\"><em>Hunt v. Cromartie</em></a> (1999) to reverse and remand the district court’s decision in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp2/34/1029/2462399/\"><em>Cromartie v. Hunt</em></a> (1998), in where the district court had struck down <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/348352\">Chapter 11</a> of the Session Laws of 1997.",
+   "contextTwo": "On remand, the district court ruled in <a href=\"https://law.justia.com/cases/federal/district-courts/FSupp2/133/407/2292720/\"><em>Cromartie v. Hunt</em></a> (2000) that although District 1 of Chapter 11 was constitutional, District 12 was not. On appeal a 5th time to the Supreme Court, the plan was upheld in <a href=\"https://supreme.justia.com/cases/federal/us/532/234/case.html\"><em>Easley v. Cromartie</em></a> (2001) and the district court’s decision stayed, allowing use of the Chapter 11 map for the 2000 election. The justification from the Court’s liberal bloc (ruling together for the first time - previously, the conservative bloc had formed the majority) was because race and voting behavior were so closely tied together in North Carolina, the map in Chapter 11 was closer to a legal partisan gerrymander than an unconstitutional racial gerrymander. This map would last for one congressional term, until the 108th Congress in 2003.",
    "contextThree": ""
  },
  {
@@ -520,9 +520,9 @@
    "govControl": "Michael F. Easley (Democratic)",
    "repNum": 13,
    "pop": "8,049,313",
-   "redistType": "",
+   "redistType": "State Legislature",
    "fileName": "nc_topojson/North_Carolina_108_to_112.json",
-   "context": "",
+   "context": "After the census of 2000, North Carolina was reapportioned 1 more representatives, bringing its total to 13. Consequently, the state legislature redistricted the state in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/464123\">Chapter 471</a> of the Session Laws of 2001 and submitted it to the Justice Department for preclearence. Failing to receive preclearance, the state redistricted itself once more in <a href=\"http://digital.ncdcr.gov/cdm/ref/collection/p249901coll22/id/464123\">Chapter 479</a> of the Session Laws of 2001, this time receiving preclearance. This map would last until the 113th Congress in 2013.",
    "contextTwo": "",
    "contextThree": ""
  }
