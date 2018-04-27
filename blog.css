@@ -108,12 +108,13 @@ body {
 
 @media only screen and (min-width: 992px) {
   .main-content {
-    grid-template-columns: 10% 1fr 10%;
+    grid-template-columns: 1fr 1000px 1fr;
     grid-template-rows: 77px max-content 77px;
     grid-template-areas: 
       ". . ."
       ". text ."
       ". . .";
+    line-height: 1.7em
   }
 }  
 
