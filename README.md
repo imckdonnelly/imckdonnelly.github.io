@@ -13,8 +13,9 @@ You can view the project at imckdonnelly.github.io/redistricting-visualization-p
 ## To Do
 
 Still to do:
+* Make the slider more user-friendly, especially for non-Chrome web browsers. This includes making the tick marks more noticable.
 * Write Efficiency Gap and Proportional Representation articles
-* Fix the centering issue for Massachusetts maps pre-1820 and North Carolina first map
+* Fix the centering issue for Massachusetts maps pre-1820 (Maine was part of the state but is barely visable) and North Carolina first map (Tennessee was part of the state but is barely visable)
 * Fix bug where extra tick marks are generated for some states after viewing a state with more maps
 * Make the date chooser for different states more mobile friendly
 
