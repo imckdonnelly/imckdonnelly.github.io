@@ -34,14 +34,14 @@ body {
     grid-template-columns: 100px 1fr 100px;
     grid-template-areas:
       "header  header  header"
-      "left-side content right-side";
+      ". content .";
   }
 }
 
 /*Top of Page Declaration*/
 .title {
   grid-area: header;
-  background-color: #7187f3;
+  background-color: #0f1c5a;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -53,16 +53,6 @@ body {
   margin: 0;
   padding: .4em;
   color: #ffffff;
-}
-
-.left-sidebar {
-  grid-area: left-side;
-  background-color: #7187f3;
-}
-
-.right-sidebar {
-  grid-area: right-side;
-  background-color: #7187f3;
 }
 
 /*Tile Directory Establishment*/

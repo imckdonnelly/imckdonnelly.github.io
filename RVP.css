@@ -57,7 +57,7 @@ body {
 }
 .title {
   text-align: center;
-  background-color: #7187f3;
+  background-color: #0f1c5a;
   color: white;
 }
 .top-fill {
@@ -219,7 +219,7 @@ select {
 
 /*Content aka Bottom of Page*/
 .context-container {
-  background-color: #7187f3;
+  background-color: #d2d2d2;
   display: grid;
   grid-template-columns: 20px 1fr 20px;
   grid-template-rows: 20px max-content 20px max-content 20px;

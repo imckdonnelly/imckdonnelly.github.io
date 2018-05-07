@@ -16,7 +16,7 @@ body {
   grid-template-areas:
     "header header header"
     ". content .";
-  background-color: #f3eeee;
+  background-color: #d2d2d2;
 }
 
 @media only screen and (min-width: 992px) {
@@ -32,7 +32,7 @@ body {
 .title {
   grid-row-start: 1;
   grid-column-start: 2;
-  background-color: #7187f3;
+  background-color: #0f1c5a;
   display: grid;
   align-items: center;
   text-align: center;
@@ -58,7 +58,7 @@ body {
 }
 
 .right-block {
-  background-color: #7187f3;
+  background-color: #0f1c5a;
 }
 
 .back-button {
@@ -88,12 +88,10 @@ body {
 
 .left-sidebar {
   grid-area: left-side;
-  background-color: #7187f3;
 }
 
 .right-sidebar {
   grid-area: right-side;
-  background-color: #7187f3;
 }
 
 .main-content {
