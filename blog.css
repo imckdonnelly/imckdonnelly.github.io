@@ -16,7 +16,7 @@ body {
   grid-template-areas:
     "header header header"
     ". content .";
-  background-color: #f3eeee;
+  background-color: #E1E2E1;
 }
 
 @media only screen and (min-width: 992px) {
@@ -32,7 +32,7 @@ body {
 .title {
   grid-row-start: 1;
   grid-column-start: 2;
-  background-color: #0f1c5a;
+  background-color: #000070;
   display: grid;
   align-items: center;
   text-align: center;
@@ -58,11 +58,11 @@ body {
 }
 
 .right-block {
-  background-color: #0f1c5a;
+  background-color: #000070;
 }
 
 .back-button {
-  background-color: #ff9e21;
+  background-color: #cbae82;
   grid-row-start: 1;
   grid-column-start: 1;
   text-decoration: none;
@@ -76,7 +76,7 @@ body {
     opacity: 0.0;
   }
 .back-button:hover {
-  background-color: #c16030;
+  background-color: #ffe0b2;
 }
 @media only screen and (min-width: 992px) {
   .back-button div {

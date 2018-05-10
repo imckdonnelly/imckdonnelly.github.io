@@ -16,7 +16,7 @@ body {
   grid-template-areas:
     "header header header"
     ". content .";
-  background-color: #f3eeee;
+  background-color: #E1E2E1;
 }
 @media only screen and (min-width: 768px) {
   body {
@@ -41,7 +41,7 @@ body {
 /*Top of Page Declaration*/
 .title {
   grid-area: header;
-  background-color: #0f1c5a;
+  background-color: #000070;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -88,7 +88,7 @@ body {
 }
 
 .text-block {
-  border-color: black;
+  border-color: #000070;
   border-style: solid;
   padding: 0.2em .6em;
   background-color: white;
@@ -98,6 +98,7 @@ body {
 /*Picture Link Positioning*/
 .pic-link {
   border: solid;
+  border-color: #000070;
   text-decoration: none;
   display: grid;
   grid-template-columns: 1fr;
@@ -123,6 +124,9 @@ body {
   color: black;
   grid-area: tile;
   text-align: center;
+}
+.pic-link:hover {
+    border-color: #7953d2;
 }
 .pic-link:hover .state-name {
   visibility: visible;
@@ -187,7 +191,7 @@ body {
   grid-row-start: 4;
 }
 .tile {
-  border-color: black;
+  border-color: #000070;
   border-style: solid;
   border-width: 5px;
   border-radius: 50px;
@@ -196,7 +200,7 @@ body {
   display: grid;
   align-items: center;
   text-align: center;
-  background-color: #e8d2cd;
+  background-color: #ffe0b2;
   color: black;
 }
 
@@ -232,11 +236,8 @@ body {
     padding: .2em;
   }
   .tile:hover {
-    opacity: .7;
-  }
-  .tile:hover div {
-    color: #7187f3;
-    opacity: 1;
+    background-color: #cbae82;
+    border-color: #7953d2;
   }
   
   .blog-links {

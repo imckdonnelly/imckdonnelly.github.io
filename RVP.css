@@ -39,7 +39,7 @@ body {
 }
 
 .back-button {
-  background-color: #ff9e21;
+  background-color: #cbae82;
   text-decoration: none;
   opacity: 1;
   display: grid;
@@ -48,7 +48,7 @@ body {
   color: black;
 }
 .back-button:hover {
-  background-color: #c16030;
+  background-color: #ffffe4;
 }
 @media only screen and (max-width: 992px) {
   #home {
@@ -57,7 +57,7 @@ body {
 }
 .title {
   text-align: center;
-  background-color: #0f1c5a;
+  background-color: #000070;
   color: white;
 }
 .top-fill {
@@ -110,11 +110,14 @@ body {
 }
 
 select {
-  background: #ff9e21;
+  background: #cbae82;
 }
 .state-select {
   display: grid;
   align-items: stretch;
+}
+select:hover {
+  background-color: #ffffe4;
 }
 
 
@@ -219,7 +222,7 @@ select {
 
 /*Content aka Bottom of Page*/
 .context-container {
-  background-color: #d2d2d2;
+  background-color: #E1E2E1;
   display: grid;
   grid-template-columns: 20px 1fr 20px;
   grid-template-rows: 20px max-content 20px max-content 20px;
