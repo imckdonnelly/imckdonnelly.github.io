@@ -1,4 +1,3 @@
- 
 html {
   box-sizing: border-box;
 }
@@ -10,126 +9,119 @@ body {
   font-family: "Helvatica", Arial, sans;
   margin: 0;
   display: grid;
-  min-height: 100vh;
   grid-template-rows: max-content 1fr;
-  grid-template-columns: 7% 1fr 7%;
-  grid-template-areas:
-    "header header header"
-    ". content .";
-  background-color: #E1E2E1;
+  grid-template-areas: 
+    "header"
+    "content";
+  background-color: white;
 }
 
-@media only screen and (min-width: 992px) {
-  body {
-    grid-template-rows: 85px 1fr;
-    grid-template-columns: 100px 1fr 100px;
-    grid-template-areas: 
-      "header  header  header"
-      "left-side content right-side";
-  }
+.header {
+  grid-area: header;
+  display: flex;
+  background-color: #000070;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#open-button {
+  display: none;
+}
+
+#close-button {
+  display: none;
 }
 
 .title {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  background-color: #000070;
-  display: grid;
+  font-size: 2.3em;
+  padding: .5em 1em; 
+  float: left;
   align-items: center;
-  text-align: center;
-}
-@media only screen and (min-width: 992px) {
-  .title {
-    grid-column-start: 2;
-    justify-items: center;
-  }
 }
 
-.top-fill {
-  font-size: 1.5em;
-  margin: 0;
-  padding: .4em;
-  color: #ffffff;
-  text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .top-fill {
-    font-size: 2em;
-  }
-}
-
-.right-block {
-  background-color: #000070;
-}
-
-.back-button {
-  background-color: #cbae82;
-  grid-row-start: 1;
-  grid-column-start: 1;
+.title a {
   text-decoration: none;
-  opacity: .99;
-  display: grid;
-  justify-items: center;
+  color: white;
+}
+
+.title a:hover {
+  color: #a9a9a9;
+}
+
+.nav-bar {
+  float: right;
   align-items: center;
+  padding-right: 1em
 }
-.back-button div {
-    color: #ff9e21;
-    opacity: 0.0;
-  }
-.back-button:hover {
-  background-color: #ffe0b2;
+
+.nav-bar a {
+  color: white;
 }
+
+.nav-item {
+  display: inline-block;
+  margin: 0 2em;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #a9a9a9;
+}
+
+.dropdown-item {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-item a {
+  display: block;
+  padding: .4em;
+  font-size: .8em;
+}
+
+.nav-item:hover .dropdown-item {
+  background-color: #4527a0;
+}
+  
 @media only screen and (min-width: 992px) {
-  .back-button div {
-    color: black;
-    opacity: 1.0;
-  }
+.nav-item:hover .dropdown-item {
+  display: block;
+}
 }
 
-
-.left-sidebar {
-  grid-area: left-side;
-}
-
-.right-sidebar {
-  grid-area: right-side;
+.dropdown-item a:hover {
+  background-color: #7953d2;
 }
 
 .main-content {
   grid-area: content;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 30px max-content 20px;
-  grid-template-areas: 
-    "."
-    "text"
-    ".";
+  line-height: 2em;
+  width: 66%;
+  margin: .5% auto 3% auto;
 }  
 
-@media only screen and (min-width: 992px) {
-  .main-content {
-    grid-template-columns: 1fr 1000px 1fr;
-    grid-template-rows: 77px max-content 77px;
-    grid-template-areas: 
-      ". . ."
-      ". text ."
-      ". . .";
-    line-height: 1.7em
-  }
-}  
+.main-content p {
+  font-size: 18px;
+}
 
 .text-area {
-  grid-area: text;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 15px;
-  box-shadow: 0 0 2px 0 #000000;
-  padding: .8em 4%;
-  background-color: white;
+  padding: 4%;
 }
 
 .text-area h1 {
-    text-align: center;
+  text-align: center;
+}
+
+.text-area h3 {
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .image {
@@ -137,4 +129,65 @@ body {
   display: block; 
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    display: block;
+  }
+  
+  .nav-bar {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    right: 0;
+    background-color: #4527a0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 0;
+  }
+  
+  .title {
+    float: left;
+    font-size: 2.8em;
+  }
+  
+  #open-button {
+    display: block;
+    float: right;
+    font-size: 2.8em;
+    padding: .3em 1em;
+    cursor: pointer;
+  }
+  
+  #close-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 3em;
+    padding: .8em .5em;
+    cursor: pointer;
+  }
+  
+  .nav-item {
+    display: block;
+    margin: 0;
+    font-size: 2.5em;
+    padding: .5em .8em;
+  }
+  
+  .dropdown-item {
+    padding-left: .4em;
+  }
+  
+  .main-content {
+    width: 80%;
+  }
+  
+  .text-area p {
+    line-height: 3em;
+  }
+  
 }

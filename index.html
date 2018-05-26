@@ -4,6 +4,7 @@
   <title>Redistricting Visualization Project</title>
   <link rel="stylesheet" href="home.css" type="text/css">
   <script src="jquery-3.2.1.js"></script>
+  <script src="blog.js"></script>
   <link rel="icon" type="image/png" href="images/favicon.ico">
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118690040-1"></script>
@@ -16,52 +17,64 @@
 </head>
 
 <body>
+  <div class="header">
     <div class="title">
-      <p class="top-fill">Redistricting Visualization Project</p>
+      <a href="index.html">Redistricting Visualization Project</a>
     </div>
-    <div class="left-sidebar"></div>
-    <div class="tile-directory">
-      <div class="text-block" id="first-text">
-        <p>Hello and welcome to the Redistricting Visualization Project! This project was started after a very simple thought: what if you could scroll through a state's history to view how its congressional districts have changed over time.</p>
-        <p>Below, you can select one of the four currently available states and do exactly that. As part of the Visualizer, you will also find two cards to better understand that map's story. In the first card, you will find simple stats for the displayed map. On the second card, you will find short explainers about what went into that map's redistricting, whether it was simple legislation, district court lawsuit, or the result of a national shift in redistricting.</p>
+    <div id="open-button" >&#9776;</div>
+    <div class="nav-bar" id="nav-bar">
+      <a id="close-button">&times;</a>
+      <div class="nav-item" id="articles">
+        <a href="#">Articles &#9660;</a>
+        <div class="dropdown-item" id="article-names" >
+          <a href="overview.html">Overview of Redistricting</a>
+          <a href="judicial-history.html">The History of Judicial Redistricting</a>
+          <a href="#">The Gaps in the Efficiency Gap</a>
+          <a href="#">How to Fix Gerrymandering</a>
+        </div>
       </div>
-      <div class="state-links">
-        <a href="visualizer.html?index=0" id="arizona" class="pic-link">
-          <img class="picture" src="images/arizona.png"/>
-          <div class="state-name">Arizona</div>
-        </a>
-        <a href="visualizer.html?index=1" id="massachusetts" class="pic-link">
-          <img class="picture" src="images/massachusetts.png"/>
-          <div class="state-name">Massachusetts</div>
-        </a>
-        <a href="visualizer.html?index=2" id="north-carolina" class="pic-link">
-          <img class="picture" src="images/north-carolina.png"/>
-          <div class="state-name">North Carolina</div>
-        </a>
-        <a href="visualizer.html?index=3" id="wisconsin" class="pic-link">
-          <img class="picture" src="images/wisconsin.png"/>
-          <div class="state-name">Wisconsin</div>
-        </a>
+      <div class="nav-item" id="visualizer">
+        <a href="#">States &#9660;</a>
+        <div class="dropdown-item" id="states" >
+          <a href="visualizer.html?index=0">Arizona</a>
+          <a href="visualizer.html?index=1">Massachusetts</a>
+          <a href="visualizer.html?index=2">North Carolina</a>
+          <a href="visualizer.html?index=3">Wisconsin</a>
+        </div>
       </div>
-      <div class="text-block" id="second-text">
-        <p>Below, you can select one of the tiles and read more about the history of redistricting in the United States. "Overview of Redistricting" is written to provide a surface level understanding of the redistricting process and gerrymandering in the United States. "The History of Judicial Redistricting" examines the impact that the Supreme Court and the Voting Rights Act have had on redistricting. "The Gaps in the Efficiency Gap" discusses some of the potential shortcomings and consequences of measuring partisan gerrymandering. The first two articles are published, although the Efficiency Gap article is forthcoming within the next week.</p>
-        <p>If you have any questions or suggestions surrounding the Project, or want to explore the topic further, you can find my contact and sources on the "About" page. Cheers!</p>
-      </div>
-      <div class="blog-links">
-        <a href="overview.html" class="tile" id="blog-1">
-          <div>Overview of Redistricting</div>
-        </a>
-        <a href="judicial-history.html" class="tile" id="blog-2">
-          <div>The History of Judicial Redistricting</div>
-        </a>
-        <a href="#" class="tile" id="blog-3">
-          <div>The Gaps in the Efficiency Gap</div>
-        </a>
-        <a href="About.html" class="tile" id="blog-4">
-          <div>About</div>
-        </a>
-      </div>
+      <a class="nav-item" id="about" href="About.html">About</a>
     </div>
-    <div class="right-sidebar"></div>
+  </div>
+  <div class="tile-directory">
+    <div class="text-block" id="first-text">
+      <p>Welcome to the Redistricting Visualization Project! This project was started one night, as the result of a very simple question: what would it look like if you could view a state's congressional districts in sequence? In other words, could you identify gerrymandering or inexcusable districts if viewed in context with the others? What patterns, if any, would emerge from state to state?</p>
+      <p>To help answer this question, this website provides two avenues. First, the Visualizer allows you to explore those very questions, by scrolling through a state's history. Is there any difference you can notice in the maps before and after the 1960s? Before and after the Civil War? The 1990s?</p>
+      <p>To assist in understanding the maps, the Visualizer also features two boxes that provide additional context. The first box contains basic information like the population at the most recent census, which party was in control of the government when the map was drawn, and why the map was drawn (Court ordered redraw by the legislature, court drawn, legislature, or independent commission). The second box expands on the general context of the map. If there was a court case, what happened in it? What is the actual law that legislated the redraw? How many representatives did the state gain or lose? It also contains links to all of the laws and court cases applicable for that map.</p>
+      <p>To get started, choose one of the state's below. If you want to change states, the upper right hand corner of the Visualizer lets you select a different state to explore.</p>
+    </div>
+    <div class="state-links">
+      <a href="visualizer.html?index=0" id="arizona" class="pic-link">
+        <img class="picture" src="images/arizona.png"/>
+        <div class="state-name">Arizona</div>
+      </a>
+      <a href="visualizer.html?index=1" id="massachusetts" class="pic-link">
+        <img class="picture" src="images/massachusetts.png"/>
+        <div class="state-name">Massachusetts</div>
+      </a>
+      <a href="visualizer.html?index=2" id="north-carolina" class="pic-link">
+        <img class="picture" src="images/north-carolina.png"/>
+        <div class="state-name">North Carolina</div>
+      </a>
+      <a href="visualizer.html?index=3" id="wisconsin" class="pic-link">
+        <img class="picture" src="images/wisconsin.png"/>
+        <div class="state-name">Wisconsin</div>
+      </a>
+    </div>
+    <div class="text-block" id="second-text">
+      <p>The second part of the website comprises the articles and analyses that I have written while developing the Project. Each article address a different aspect of redistricting and gerrymandering in the United States, and aims to demystify or elaborate on a particular idea or process. As I continue developing this Project, I will continue to publish new articles.</p>
+      <p>"Overview of Redistricting" provides perhaps a surface-level explanation about the general process of redistricting in the United States, and how it can get bungled up by gerrymandering. "The History of Judicial Redistricting" examines how the court system became involved in redistricting, and the impact that involvement has had on American democracy. "The Gaps in the Efficiency Gap" will explore the potential shortcomings in the new metric before the Supreme Court to "measure" partisan gerrymandering. "How to Fix Gerrymandering" will offer a potential solution to the ills of illegal and distasteful redistricting. The last two articles will be published soon.</p>
+      <p>Lastly, if you are curious about the methodology or the sources for the Project, or interested in further reading on the topic, please visit the About page on the top bar. You can also find my contact information, if you have thoughts, suggestions, or want to chat. Cheers!</p>
+    </div>
+  </div>
 </body>
 </html>

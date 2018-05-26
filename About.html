@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RVP Explainer</title>
+  <title>About</title>
   <link rel="stylesheet" href="blog.css" type="text/css">
+  <script src="jquery-3.2.1.js"></script>
+  <script src="blog.js"></script>
+  <link rel="icon" type="image/png" href="images/favicon.ico">
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118690040-1"></script>
     <script>
@@ -14,32 +17,54 @@
 </head>
 
 <body>
-    <a href="index.html" class="back-button">
-        <div>Home</div>
-    </a>
+  <div class="header">
     <div class="title">
-      <p class="top-fill">Redistricting Visualization Project</p>
+      <a href="index.html">Redistricting Visualization Project</a>
     </div>
-    <div class="right-block"></div>
-    <div class="left-sidebar"></div>
-    <div class="main-content">
-      <div class="text-area">
-          <h1>About</h1>
-          <p>The impetus for this project came one night as I was talking with my friend about what patterns in districts you could notice if it were possible to scroll through the state's history. How would realtime gerrymandering look when you could move through a state's history, with decades representated by only a few ticks on a slider. With the help of some truly incredible people, that dream is here.</p>
-          <p>There are two main components to this project, the Visualizer and the Articles. The Articles provide some background on the redistricting process and gerrymandering in the United States today, and are available from the Home page.</p>
-          <p>The <a href="visualizer.html">Visualizer</a> is designed to show how district lines have changed, and what was happening when they did. On the page there are four sections - the title, with state name and date range of the current map. Next is the actual map, and below that two cards to contexualize the map. First is basic information like party control of state government when the map was redrawn and population, and second is the more lengthy explaination about what was going on in the country or the state at the time of the redistricting, along with the state law that legalized the redistricting scheme.</p>
-          <p>There are still a few things I need to fix and update on the site. You can see a full list on the <a href="https://github.com/imckdonnelly/redistricting-visualization-project/blob/master/README.md">Github readme</a>.</p>
-          <br>
-          <p>For my sources, the biggest thanks goes to Professor Jeff Lewis and his <a href="http://cdmaps.polisci.ucla.edu/">incredible work</a> generating shapefiles for every congressional district in history. Without his work, none of this site would be possible.</p>
-          <p>Jeffrey B. Lewis, Brandon DeVine, Lincoln Pitcher, and Kenneth C. Martis. (2013) Digital Boundary Definitions of United States Congressional Districts, 1789-2012. GeoJSON files of Arizona, Massachusetts, North Carolina, and Wisconsin. Retrieved from http://cdmaps.polisci.ucla.edu on October 2017.</p>
-          <p>As part of this credit, I also must thank Professor Ken Martis, who published in the 1980s a first-of-its-kind atlas of United States congressional districts through American history, and whose work paved the way for any subsequent research.</p>
-          <p>From my own development, I must also thank two specific Northeastern University faculty members. Professor <a href="http://www.cameronblevins.org/">Cameron Blevins</a> served as my faculty advisor while I completed this project as my senior capstone, and his guidance was unparalleled in its clarity, encouragement, and helpfulness. This Project would not be here without his willingness to help me on my journey.</p>
-          <p>I also must thank <a href="http://www.stevengbraun.com/">Steven Braun</a> of the Northeastern University Data Visualization Group, whose experience with D3.js and willingness to guide my code was as needed as the actual code itself.</p>
-          <br>
-          <br>
-          <p>If you have any questions or thoughts about the Project, I invite you to connect with me on <a href="https://www.linkedin.com/in/imckdonnelly/">LinkedIn</a>, or I can be reached by  <a href="mailto:imckdonnelly+RVP@gmail.com">email</a>. </p>
+    <div id="open-button" >&#9776;</div>
+    <div class="nav-bar" id="nav-bar">
+      <a id="close-button">&times;</a>
+      <div class="nav-item" id="articles">
+        <a href="#">Articles &#9660;</a>
+        <div class="dropdown-item" id="article-names" >
+          <a href="overview.html">Overview of Redistricting</a>
+          <a href="judicial-history.html">The History of Judicial Redistricting</a>
+          <a href="#">The Gaps in the Efficiency Gap</a>
+          <a href="#">How to Fix Gerrymandering</a>
+        </div>
       </div>
+      <div class="nav-item" id="visualizer">
+        <a href="#">States &#9660;</a>
+        <div class="dropdown-item" id="states" >
+          <a href="visualizer.html?index=0">Arizona</a>
+          <a href="visualizer.html?index=1">Massachusetts</a>
+          <a href="visualizer.html?index=2">North Carolina</a>
+          <a href="visualizer.html?index=3">Wisconsin</a>
+        </div>
+      </div>
+      <a class="nav-item" id="about" href="About.html">About</a>
     </div>
-    <div class="right-sidebar"></div>
+  </div>  
+  <div class="main-content">
+    <div class="text-area">
+      <h1>About</h1>
+      <p>The impetus for this project came one night as I was talking with my friend about what patterns in districts you could notice if it were possible to scroll through the state's history. How would realtime gerrymandering look when you could move through a state's history, with decades representated by only a few ticks on a slider. With the help of some truly incredible people, that dream is here.</p>
+      <p>There are two main components to this project, the Visualizer and the Articles. The Articles provide some background on the redistricting process and gerrymandering in the United States today, and are available from the Home page.</p>
+      <p>The <a href="visualizer.html">Visualizer</a> is designed to show how district lines have changed, and what was happening when they did. On the page there are four sections - the title, with state name and date range of the current map. Next is the actual map, and below that two cards to contexualize the map. First is basic information like party control of state government when the map was redrawn and population, and second is the more lengthy explaination about what was going on in the country or the state at the time of the redistricting, along with the state law that legalized the redistricting scheme.</p>
+      <p>There are still a few things I need to fix and update on the site. You can see a full list on the <a href="https://github.com/imckdonnelly/redistricting-visualization-project/blob/master/README.md">Github readme</a>.</p>
+      <br>
+      <p>If you would like to use this page or any of its contents, please shoot me an email (link at the bottom), and include the following citation: Ian Donnelly. (2018) Redistricting Visualization Project. Retrieved from http://www.imckdonnelly.com on [date of download].</p>
+      <p>This project and all associated works are my own intellectual property and are such since puplication on May 2018.</p>
+      <br>
+      <p>For my sources, the biggest thanks goes to Professor Jeff Lewis and his <a href="http://cdmaps.polisci.ucla.edu/">incredible work</a> generating shapefiles for every congressional district in history. Without his work, none of this site would be possible.</p>
+      <p>Jeffrey B. Lewis, Brandon DeVine, Lincoln Pitcher, and Kenneth C. Martis. (2013) Digital Boundary Definitions of United States Congressional Districts, 1789-2012. GeoJSON files of Arizona, Massachusetts, North Carolina, and Wisconsin. Retrieved from http://cdmaps.polisci.ucla.edu on October 2017.</p>
+      <p>As part of this credit, I also must thank Professor Ken Martis, who published in the 1980s a first-of-its-kind atlas of United States congressional districts through American history, and whose work paved the way for any subsequent research.</p>
+      <p>From my own development, I must also thank two specific Northeastern University faculty members. Professor <a href="http://www.cameronblevins.org/">Cameron Blevins</a> served as my faculty advisor while I completed this project as my senior capstone, and his guidance was unparalleled in its clarity, encouragement, and helpfulness. This Project would not be here without his willingness to help me on my journey.</p>
+      <p>I also must thank <a href="http://www.stevengbraun.com/">Steven Braun</a> of the Northeastern University Data Visualization Group, whose experience with D3.js and willingness to guide my code was as needed as the actual code itself.</p>
+      <br>
+      <br>
+      <p>If you have any questions or thoughts about the Project, I invite you to connect with me on <a href="https://www.linkedin.com/in/imckdonnelly/">LinkedIn</a>, or I can be reached by  <a href="mailto:imckdonnelly+RVP@gmail.com">email</a>. </p>
+    </div>
+  </div>
 </body>
 </html>
