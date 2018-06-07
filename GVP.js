@@ -69,6 +69,7 @@ $(document).ready(function () {
     
     //Variables defined
     var slider = $('#state-dates')[0];
+    var dropdown = $('#date-chooser')[0];
     var position;
     var lowerBound;
     var upperBound;
@@ -82,6 +83,10 @@ $(document).ready(function () {
       jdata.forEach(function(i, f) {
         var ticks = $("#date-list option");
         $(ticks[f]).html(i.sYear);
+      });
+      jdata.forEach(function(i, f) {
+        var dates = $('#dates option');
+        $(dates[f]).html(i.sYear);
       });
       //Slider info
       var yearSpan = jdata.length;
@@ -190,6 +195,7 @@ $(document).ready(function () {
         changeMap();
       }
     };
+    
   }
   
   

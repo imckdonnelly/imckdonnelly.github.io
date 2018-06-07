@@ -185,7 +185,6 @@ body {
   }
 }
 
-
 .text-block {
   line-height: 1.6em;
   font-size: 18px;
@@ -237,7 +236,7 @@ body {
 }
 
 .pic-link:hover {
-    border-color: #7953d2;
+  border-color: #7953d2;
 }
 .pic-link:hover .state-name {
   visibility: visible;
