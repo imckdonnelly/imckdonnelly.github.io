@@ -23,25 +23,25 @@ $(document).ready(function () {
   var statePaths = [
     {
     "stateName": "Arizona",
-    "filePath": "../State_JSON/Arizona.json",
+    "filePath": "State_JSON/Arizona.json",
     "center": [-111.6602, 34.2744],
     "scale": "4500"
     },
     {
     "stateName": "Massachusetts",
-    "filePath": "../State_JSON/Massachusetts.json",
+    "filePath": "State_JSON/Massachusetts.json",
     "center": [-71.8083, 42.1596],
     "scale": "11300"
     },
     {
     "stateName": "North Carolina",
-    "filePath": "../State_JSON/North_Carolina.json",
+    "filePath": "State_JSON/North_Carolina.json",
     "center": [-79.3877, 35.5557],
     "scale": "4500"
     },
     {
     "stateName": "Wisconsin",
-    "filePath": "../State_JSON/Wisconsin.json",
+    "filePath": "State_JSON/Wisconsin.json",
     "center": [-89.9941, 44.8243],
     "scale": "4800"
     },
