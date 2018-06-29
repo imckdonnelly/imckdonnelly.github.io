@@ -171,14 +171,14 @@ body {
     "text-one"
     "state-links"
     "text-two";
-  width: 85%;
+  width: 90%;
   margin: 5% auto;
   grid-gap: 40px;
 }
 
 @media only screen and (min-width: 992px) {
   .tile-directory {
-    width: 66%;
+    width: 80%;
     margin: 3% auto 3% auto;
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr max-content;
@@ -186,8 +186,8 @@ body {
 }
 
 .text-block {
-  line-height: 1.6em;
-  font-size: 18px;
+  line-height: 1.7;
+  font-size: 20px;
 }
   
 #first-text {

@@ -108,7 +108,8 @@ body {
 }  
 
 .main-content p {
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 2em;
 }
 
 .text-area {
@@ -182,12 +183,21 @@ body {
     padding-left: .4em;
   }
   
-  .main-content {
-    width: 80%;
+  .text-area {
+    padding: 0;
+    margin: 0;
   }
   
-  .text-area p {
-    line-height: 3em;
+  .main-content {
+    padding: 2em 3em;
+    margin: 0;
+    width: auto;
+    line-height: 1.7;
+  }
+  
+  .main-content p {
+    font-size: 19px;
+    margin: 0 0 1.6em;
   }
   
 }
